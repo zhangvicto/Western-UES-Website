@@ -1,6 +1,6 @@
 # Western UES Website
-> Website for the Western Undergraduate Engineering Society
-*website is still under development*
+Website for the Western Undergraduate Engineering Society
+(*website is still under development*)
 
 ## Intro
 Hey thanks for checking out the github for the UES website this website is entirely scripted with CSS and HTML. Javascript is also included to make the site more interactive, but is not needed (static site w/o JS). However, if you wish to purchase an item from the shop, Javascript needs to be enabled. 
