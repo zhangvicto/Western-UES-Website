@@ -1,4 +1,4 @@
-# Western UES Website
+# :computer: Western UES Website
 Website for the Western Undergraduate Engineering Society
 (*website is still under development*)
 
