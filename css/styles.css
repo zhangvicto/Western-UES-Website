@@ -22,6 +22,7 @@ body {
 body {
     height:100%;
     display: flex;
+    text-align: center;
 }
 
 /* MENU */
@@ -38,19 +39,26 @@ body ol {
 
 .menu-image {
     align-self: flex-start;
-    margin:20px;
-    height:62px;
+    margin-left: 5vw;
+    margin-top: 20px;
+    height:50px;
 }
 
 .menu-items {
+    height:50px;
     position: absolute;
     right: 0;
+    display:flex;
+    align-items: center;
+    margin: 20px;
+    margin-right: 5vw;
 }
 
 body ol li {
+    padding-left:20px;
+    padding-right:20px;
     display: inline-block;
     width: 70px;
-    padding: 20px;
 }
 
 body ol li a {
@@ -70,7 +78,7 @@ body ol li a {
     border-radius: 10px;
     padding-right: 30px;
     padding-left: 10px;
-    top:30px;
+    top:35px;
     left:50%;
     transform: translate(-50%);
 }
@@ -81,7 +89,7 @@ body ol li a {
     top: 6.65px;
     width: 10px;
     height: 10px;
-    opacity: 0.3;
+    opacity: 0.5;
     z-index: 1;
 }
 
@@ -109,16 +117,33 @@ body ol li a {
 
 /* CAROUSEL */
 .main-carousel {
-    margin-top: 90px;
+    margin-top: 100px;
     position: absolute;
     width: 100%;
     height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+.circle-container {
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.carousel-circle {
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: rgba(116, 185, 154, 0.75);
 }
 
 .slide {
     border-radius: 25px;
     margin: 0 auto;
-    width: 80%;
+    width: 90vw;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -129,14 +154,14 @@ body ol li a {
 }
 
 .slide2 {
-
+    background-image: url(/img/front1.jpg);
+    display: none;
 }
 
 .slide3 {
-
+    background-image: url(/img/front1.jpg);
+    display: none;
 }
-
-
 
 .slide-text {
     border-radius: 25px 0px 0px 25px ; 
@@ -150,15 +175,13 @@ body ol li a {
     margin-left:20px;
     font-size: 48px;
     font-weight: 700;
+    text-align: left;
 }
 
 .slide-text-description {
     margin-left:20px;
     font-size: 16px;
-}
-
-.carousel-dot {
-
+    text-align: left;
 }
 
 
