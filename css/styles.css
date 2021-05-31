@@ -138,8 +138,8 @@ body ol li a {
 }
 
 .circle-container {
-    align-self: baseline;
-    bottom: 100px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .carousel-circle {
