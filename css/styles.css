@@ -150,16 +150,16 @@ body ol li a {
 }
 
 .slide1 {
-    background-image: url(/img/front1.jpg);
+    background-image: url("/img/front1.jpg");
 }
 
 .slide2 {
-    background-image: url(/img/front1.jpg);
+    background-image: url("/img/front1.jpg");
     display: none;
 }
 
 .slide3 {
-    background-image: url(/img/front1.jpg);
+    background-image: url("/img/front1.jpg");
     display: none;
 }
 
