@@ -11,6 +11,19 @@ function fadeIn(element) {
     }, 8);
 }
 
+function fadeInLong(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 10);
+}
+
 function fadeOut(element) {
     var op = 1;  // initial opacity
     var timer = setInterval(function () {
@@ -48,44 +61,48 @@ function topMarginUp(element, dis, time, speed) {
     }, time);
 }
 
-//Carousel
-//function carousel() {
-//  for (let i = 1; ; i++) {
-//    setTimeout(function () {
-//      let next = i + 1;
-//    console.log("yes")
-//    fadeIn(document.getElementById("slide" + next));
-//    fadeOut(document.getElementById("slide" + i));
-//}, 3000)
-//if (i >= 2) {
-//    i = 0;
-//}
-//}
-//}
-
-//carousel();
-
+//CAROUSEL
 var i = 1;
+var carouselTime = 3000;
+var carouselSize = 3;
+var carouselRun = 1;
 
 function carousel() {
-    setTimeout(function () {
-        let next = i + 1;
-        if (i != 0) {
-            document.getElementById("slide" + i).style.display = "none";
-        } else {
-            document.getElementById("slide" + 3).style.display = "none";
-        }
-        fadeIn(document.getElementById("slide" + next));
-        if (next == 3) {
-            i = 0;
-            carousel();
-            console.log("ok next")
-        } else {
-            i++;
-            carousel();
-        }
-    }, 3000)
+    if (carouselRun = 1) {
+        setTimeout(function () {
+            let next = i + 1;
+            if (i != 0) {
+                fadeOut(document.getElementById("slide" + i));
+                document.getElementById("circle" + i).style.backgroundColor = "rgba(116, 185, 154, 0.5)";
+            } else {
+                document.getElementById("slide" + carouselSize).style.zIndex = "2";
+                fadeOut(document.getElementById("slide" + carouselSize));
+                document.getElementById("circle" + carouselSize).style.backgroundColor = "rgba(116, 185, 154, 0.5)";
+            }
+            document.getElementById("slide" + next).style.display = "block";
+            document.getElementById("slide" + next).style.opacity = "1";
+            document.getElementById("circle" + next).style.backgroundColor = "rgba(116, 185, 154, 1)";
+            if (next == carouselSize) {
+                i = 0;
+                document.getElementById("slide" + carouselSize).style.zIndex = "-1";
+                carousel();
+            } else {
+                i++;
+                carousel();
+            }
+        }, carouselTime)
+    }
 }
 
 carousel();
 
+//if click on circle then stop carousel
+// function stopCarousel() {
+//     for (let i = 1; i <= 3; i++) {
+//         document.getElementById("circle" + i).addEventListener("click",function() {
+//             carouselRun = 0;
+//         })
+//     }
+// }
+
+// stopCarousel();

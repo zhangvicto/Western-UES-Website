@@ -2,12 +2,12 @@
 hmtl {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Jost', sans-serif;
 }
 
 /* VARS */
@@ -20,14 +20,18 @@ body {
 
 /* BODY */
 body {
-    height:100%;
+    height: 100%;
     text-align: center;
+    font-family: 'Jost', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
 }
 
 /* GENERAL FORMATTING */
 .line-break {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border: none;
     background-color: gray;
     height:1px;
@@ -35,7 +39,8 @@ body {
 }
 
 .title {
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 /* MENU */
@@ -135,11 +140,13 @@ body ol li a {
     height: 75vh;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .circle-container {
     position: absolute;
-    bottom: 0px;
+    bottom: 20px;
+    z-index: 2;
 }
 
 .carousel-circle {
@@ -148,7 +155,12 @@ body ol li a {
     margin: 0 auto;
     display: inline-block;
     border-radius: 100%;
-    background-color: rgba(116, 185, 154, 0.75);
+    background-color: rgba(116, 185, 154, 0.5);
+    cursor: pointer;
+}
+
+#circle1 {
+    background-color: rgba(116, 185, 154, 1);
 }
 
 .slide {
@@ -158,20 +170,25 @@ body ol li a {
     height: 100%;
     background-position: center;
     background-size: cover;
+    display: inline-block;
+    position: absolute;
 }
 
 .slide1 {
     background-image: url("/img/front1.jpg");
+    z-index: 1;
 }
 
 .slide2 {
-    background-image: url("/img/front1.jpg");
-    display: none;
+    background-image: url("/img/front2.jpg");
+    opacity: 1;
+    z-index: 0;
 }
 
 .slide3 {
-    background-image: url("/img/front1.jpg");
-    display: none;
+    background-image: url("/img/front3.jpg");
+    opacity: 1;
+    z-index: -1;
 }
 
 .slide-text {
@@ -200,26 +217,30 @@ body ol li a {
     height: 100%;
 }
 
+.up-event-photo {
+    height:300px;
+    width:300px;
+}
+
 
 
 /* FOOTER */
 .footer {
     background-color: var(--footerColor);
     width: 100%;
-    height: auto;
     color:white;
-    position: absolute;
-    bottom: 0;
     display: flex;
     align-content: center;
     justify-content: center;
     height:60px;
+    position: absolute;
+    bottom: 0px;
 }
 
 .footer-text {
     position: absolute;
     padding: 20px;
-    left:0;
+    left:0px;
     height: 20px;
 }
 
@@ -230,8 +251,8 @@ body ol li a {
 }
 
 .footer-socials {
-    padding: 20px;
+    padding: 18px;
     position: absolute;
-    right: 0;
+    right: 0px;
     width: 100px;
 }
