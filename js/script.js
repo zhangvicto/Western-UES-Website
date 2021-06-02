@@ -66,6 +66,7 @@ var i = 1;
 var carouselTime = 3000;
 var carouselSize = 3;
 var carouselRun = 1;
+let circleColor = "rgba(53, 53, 53, 0.5)";
 
 function carousel() {
     if (carouselRun = 1) {
@@ -73,15 +74,15 @@ function carousel() {
             let next = i + 1;
             if (i != 0) {
                 fadeOut(document.getElementById("slide" + i));
-                document.getElementById("circle" + i).style.backgroundColor = "rgba(116, 185, 154, 0.5)";
+                document.getElementById("circle" + i).style.backgroundColor = circleColor;
             } else {
                 document.getElementById("slide" + carouselSize).style.zIndex = "2";
                 fadeOut(document.getElementById("slide" + carouselSize));
-                document.getElementById("circle" + carouselSize).style.backgroundColor = "rgba(116, 185, 154, 0.5)";
+                document.getElementById("circle" + carouselSize).style.backgroundColor = circleColor;
             }
             document.getElementById("slide" + next).style.display = "block";
             document.getElementById("slide" + next).style.opacity = "1";
-            document.getElementById("circle" + next).style.backgroundColor = "rgba(116, 185, 154, 1)";
+            document.getElementById("circle" + next).style.backgroundColor = "rgba(255, 255, 255, 1)";
             if (next == carouselSize) {
                 i = 0;
                 document.getElementById("slide" + carouselSize).style.zIndex = "-1";
