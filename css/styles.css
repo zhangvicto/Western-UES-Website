@@ -168,25 +168,27 @@ body ol li a {
     margin: 0 auto;
     width: 90vw;
     height: 100%;
-    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     display: inline-block;
     position: absolute;
 }
 
 .slide1 {
-    background-image: url(img/front1.jpg);
+    background-image: url("../img/front1.jpg") no-repeat center center fixed; ;
     z-index: 1;
 }
 
 .slide2 {
-    background-image: url(/img/front2.jpg);
+    background-image: url("../img/front2.jpg") no-repeat center center fixed; ;
     opacity: 1;
     z-index: 0;
 }
 
 .slide3 {
-    background-image: url(img/front3.jpg);
+    background-image: url("../img/front3.jpg") no-repeat center center fixed; ;
     opacity: 1;
     z-index: -1;
 }
