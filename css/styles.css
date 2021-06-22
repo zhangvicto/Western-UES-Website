@@ -28,6 +28,8 @@ body {
     position: relative;
 }
 
+/* MAIN PAGE */
+
 /* GENERAL FORMATTING */
 .line-break {
     margin-top: 30px;
@@ -35,7 +37,7 @@ body {
     border: none;
     background-color: gray;
     height:1px;
-    width:80%;
+    width:70vw;
 }
 
 .title {
@@ -57,7 +59,7 @@ body ol {
 
 .menu-image {
     align-self: flex-start;
-    margin-left: 5vw;
+    margin-left: 10vw;
     margin-top: 20px;
     height:50px;
 }
@@ -69,7 +71,11 @@ body ol {
     display:flex;
     align-items: center;
     margin: 20px;
-    margin-right: 5vw;
+    margin-right: 10vw;
+}
+
+.menu-button {
+    display: none;
 }
 
 body ol li {
@@ -166,7 +172,7 @@ body ol li a {
 .slide {
     border-radius: 25px;
     margin: 0 auto;
-    width: 90vw;
+    width: 80vw;
     height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -220,7 +226,7 @@ body ol li a {
 .upcoming-events {
     margin: 0 auto;
     height: 100%;
-    width: 90vw;
+    width: 70vw;
     position: relative;
 }
 
@@ -229,51 +235,91 @@ body ol li a {
 }
 
 .up-event-photo {
-    height:250px;
-    width: 250px;
+    height:20vw;
+    width: 20vw;
     border-radius: 20px;
     background-image: url("../img/front1.jpg");
     background-position: center;
     background-size: cover;
     margin-top: 10px;
     position: relative;
+    display: inline-block;
 }
 
 .up-event-photo-description {
+    color:white;
     position: absolute;
     bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+}
 
+.up-event-box-container {
+    margin-top: 10px;
+    margin-left: 1vw;
+    width: 49vw;
+    float: right;
+    height:20vw;
+    overflow-y: scroll;
+    margin-bottom: 10px;
 }
 
 .up-event-box {
-    width:
-    display: inline;
+    width: auto;
+    display: inline-block;
+    position:relative;
+    height:30%;
 }
 
 .up-event-name {
     text-align: left;
+    font-weight: bold;
+}
+
+.up-event-date {
+    color:black;
 }
 
 .up-event-description {
     text-align: left;
+    color:gray;
+}
+
+.up-event-button {
+    color:blue;
 }
 
 /* OUR MISSION */
 .mission {
+    color:white;
     margin: 0 auto;
     height: 100%;
-    width: 90vw;
-    display: flex;
+    width: 70vw;
     position: relative;
     margin-bottom: 70px;
 }
 
 .mission-title {
+    color:black;
     text-align: center;
+    width: 100%;
 }
 
+.mission-description {
+    width: 100%;
+    height:12vw;
+    display:flex;
+    background-color: var(--mainColor);
+    border-radius: 20px;
+    margin-top: 15px;
+    justify-content: center;
+}
 
-
+.mission-description-text {
+    font-size: 18px;
+    width:auto;
+    align-self: center;
+}
 
 /* FOOTER */
 .footer {
@@ -299,9 +345,41 @@ body ol li a {
     text-align: center;
 }
 
+.footer-other a {
+    color:white;
+}
+
 .footer-socials {
     padding: 18px;
     position: absolute;
     right: 0px;
     width: 100px;
+}
+
+@media screen and (max-width: 900px) {
+    body ol li {
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu-items {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/* ABOUT US PAGE */
+
+.about-container {
+    width:70vw;
+    height:auto;
+}
+
+.sponsors-container {
+    width:70vw;
 }
