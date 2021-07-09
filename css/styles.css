@@ -74,8 +74,8 @@ body ol {
     margin-right: 10vw;
 }
 
-.menu-button {
-    display: none;
+.menu-dropdown {
+    display:none;
 }
 
 body ol li {
@@ -88,6 +88,24 @@ body ol li {
 body ol li a {
     text-decoration: none;
     color:black;
+}
+
+/* MOBILE MENU */
+.menu-mobile-container {
+}
+
+.menu-button {
+    font-size:30px;
+    font-weight: 200;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 10vw;
+    top: 0;
+}
+
+.menu-mobile-items {
+    display:none;
 }
 
 /* ALERT */
@@ -376,10 +394,27 @@ body ol li a {
 /* ABOUT US PAGE */
 
 .about-container {
-    width:70vw;
+    width:80vw;
     height:auto;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.about-photo {
+    background-image: url("../img/front1.jpg");
+    background-position: center;
+    background-size: cover;
+    width:35vw;
+    height: 35vw;
+    display: inline-block;
+}
+
+.about-text {
+    width:35vw;
+    float: right;
+    font-size: 3vh;
 }
 
 .sponsors-container {
-    width:70vw;
+    width:80vw;
 }

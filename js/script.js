@@ -107,3 +107,17 @@ carousel();
 // }
 
 // stopCarousel();
+
+//Dropdown
+document.getElementById("")
+
+//Menu Button for Mobile
+let menuButton = document.getElementById("menu-mobile");
+
+document.getElementById("menu-button").addEventListener("mouseover",function(){
+    menuButton.style.display = "block";
+});
+
+document.getElementById("menu-button").addEventListener("mouseleave",function(){
+    menuButton.style.display = "none";
+});
