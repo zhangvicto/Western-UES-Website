@@ -394,30 +394,43 @@ body ol li a {
 /* ABOUT US PAGE */
 
 .about-container {
-    width:80vw;
+    width:100%;
     height:auto;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+.about-title {
+    color:white;
+    padding: 40px;
 }
 
 .about-photo {
     background-image: url("../img/front1.jpg");
     background-position: center;
     background-size: cover;
-    width:80vw;
+    width:100vw;
     height: 75vh;
     margin:0 auto;
+    position: relative;
 }
 
 .about-text {
     margin: 0 auto;
-    width:40vw;
+    width:50vw;
     font-size: 14px;
     color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin-top: 40px;
 }
 
 .text-backdrop {
     background-color:rgba(100, 14, 14, 0.3);
+    height:100%;
+    width:100%;
 }
 
 .sponsors-container {
@@ -425,14 +438,28 @@ body ol li a {
     margin:0 auto;
 }
 
-.sponsor-pic {
-    width:25vw; 
+.sponsor-logos {
+    margin-top:20px;
 }
 
-.ues-map {
-    height: 500px;
-    width: 35vw;
-    display: inline-block;
+.sponsor-pic {
+    width:15vw; 
+    padding: 20px;
+}
+
+.fee-breakdown {
+    width:80vw;
+
+}
+
+.pie-container {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.pie-chart {
+
 }
 
 .contact-us {
@@ -442,17 +469,26 @@ body ol li a {
     margin-bottom: 40px;
 }
 
+.ues-map {
+    height: 500px;
+    width: 35vw;
+    overflow: hidden;
+}
+
 .email-container {
-    display: inline-block;
     width: 35vw;
     height: 400px;
-    text-align: left; 
     color:white;
     background:var(--mainColor);
     border-radius: 20px;
+    position: relative;
 }
 
 .email-text {
+    text-align: left; 
     font: 14px;
     margin: 10px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
 }
