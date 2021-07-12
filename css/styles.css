@@ -397,24 +397,62 @@ body ol li a {
     width:80vw;
     height:auto;
     margin: 0 auto;
-    font-size: 14px;
+    margin-top: 30px;
 }
 
 .about-photo {
     background-image: url("../img/front1.jpg");
     background-position: center;
     background-size: cover;
-    width:35vw;
-    height: 35vw;
-    display: inline-block;
+    width:80vw;
+    height: 75vh;
+    margin:0 auto;
 }
 
 .about-text {
-    width:35vw;
-    float: right;
-    font-size: 3vh;
+    margin: 0 auto;
+    width:40vw;
+    font-size: 14px;
+    color: white;
+}
+
+.text-backdrop {
+    background-color:rgba(100, 14, 14, 0.3);
 }
 
 .sponsors-container {
     width:80vw;
+    margin:0 auto;
+}
+
+.sponsor-pic {
+    width:25vw; 
+}
+
+.ues-map {
+    height: 500px;
+    width: 35vw;
+    display: inline-block;
+}
+
+.contact-us {
+    width:80vw;
+    margin: 0 auto;
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.email-container {
+    display: inline-block;
+    width: 35vw;
+    height: 400px;
+    text-align: left; 
+    color:white;
+    background:var(--mainColor);
+    border-radius: 20px;
+}
+
+.email-text {
+    font: 14px;
+    margin: 10px;
 }
