@@ -374,23 +374,6 @@ body ol li a {
     width: 100px;
 }
 
-@media screen and (max-width: 900px) {
-    body ol li {
-        padding-left:10px;
-        padding-right:10px;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .menu-items {
-        display: none;
-    }
-
-    .menu-button {
-        display: block;
-    }
-}
-
 /* ABOUT US PAGE */
 
 .about-container {
@@ -406,7 +389,7 @@ body ol li a {
 }
 
 .about-photo {
-    background-image: url("../img/front1.jpg");
+    background-image: url("../img/people.jpg");
     background-position: center;
     background-size: cover;
     width:100vw;
@@ -418,7 +401,7 @@ body ol li a {
 .about-text {
     margin: 0 auto;
     width:50vw;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
     position: absolute;
     top:50%;
@@ -428,7 +411,7 @@ body ol li a {
 }
 
 .text-backdrop {
-    background-color:rgba(100, 14, 14, 0.3);
+    background-color:rgba(100, 14, 14, 0.5);
     height:100%;
     width:100%;
 }
@@ -436,6 +419,7 @@ body ol li a {
 .sponsors-container {
     width:80vw;
     margin:0 auto;
+    margin-top: 40px;
 }
 
 .sponsor-logos {
@@ -448,18 +432,29 @@ body ol li a {
 }
 
 .fee-breakdown {
+    text-align: center;
     width:80vw;
-
+    margin: 0 auto;
 }
 
 .pie-container {
-    position:absolute;
-    top:50%;
-    transform: translateY(-50%);
+    position: relative;
+    margin: 0 auto;
+    height:400px;
 }
 
 .pie-chart {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
 
+.circle {
+    height:300px;
+    width:300px;
+    border-radius: 50%;
+    background-color: royalblue;
 }
 
 .contact-us {
@@ -491,4 +486,88 @@ body ol li a {
     position: absolute;
     top:50%;
     transform: translateY(-50%);
+}
+
+/* WEEKLY EVENTS */
+.weekly-events-container {
+    width:80vw;
+    margin:0 auto;
+    position: relative;
+}
+
+.weekly-events-title {
+    width: 100%;
+    text-align: center;
+}
+
+.events-container {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.weekly-events-pic {
+    width: 45vw;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 1vw;
+}
+
+.weekly-events {
+    width: 25vw;
+    display: inline-block;
+    margin-left: 1vw;
+}
+
+.weekly-event-date {
+    font-weight: bold;
+}
+
+.weekly-event-description {
+    font-style: italic;
+}
+
+.event {
+    text-align: left;
+}
+
+.sign-up-button {
+    border-radius: 15px;
+    text-align: center;
+    width:100px;
+    background-color: var(--mainColor);
+    padding: 3px;
+}
+
+.sign-up-button a {
+    color:white;
+    text-decoration: none;
+}
+
+.sign-up-button:hover {
+    background-color: var(--footerColor);
+}
+
+.calendar-container {
+    margin-top:40px;
+}
+
+/* RESPONSIVE STUFF */
+@media screen and (max-width: 1200px) {
+    body ol li {
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .menu-items {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
 }
