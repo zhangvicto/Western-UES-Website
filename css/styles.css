@@ -445,16 +445,113 @@ body ol li a {
 
 .pie-chart {
     position:absolute;
-    top: 50%;
-    left: 50%;
+    height:300px;
+    width:300px;
+    top:50%;
+    left:50%;
     transform: translateY(-50%) translateX(-50%);
 }
 
 .circle {
+    transition: all 0.5s;
+    position: absolute;
     height:300px;
     width:300px;
+    border-radius: 100%;
+    background-color: #FFFF8F;
+    clip: rect(0px, 300px, 300px, 0px);
+}
+
+.hold {
+    transition: all 0.5s;
+    position:absolute;
+    height:300px;
+    width:300px;
+    border-radius: 100%;
+    clip: rect(0px, 300px, 300px, 150px);
+}
+
+.circle:hover {
+    background-color: yellow;
+}
+
+#pie-ues .circle {
+    background-color: var(--mainColor);
+    transform: rotate(0deg);
+}
+
+#pie-ues .circle:hover {
+    background-color: black;
+}
+
+#pie-project {
+    transform: rotate(13.3deg);
+}
+
+#pie-project .circle  {
+    transform: rotate(13.3deg);
+}
+
+#pie-lab {
+    transform: rotate(13.3deg);
+}
+
+#pie-lab .circle {
+    background-color: #cf9b00;
+    transform: rotate(63.3deg);
+}
+
+#pie-lab .circle:hover {
+    background-color: #cf6b00;
+}
+
+.circle-white {
+    position:absolute;
+    height:175px;
+    width:175px;
     border-radius: 50%;
-    background-color: royalblue;
+    background-color: white;
+    top:62.5px;
+    left:62.5px;
+}
+
+.pie-text {
+    position: relative;
+}
+
+.pie-text-box {
+    font-size: 12px;
+    height: 200px;
+    width:200px;
+}
+
+.pie-ues-text {
+    position: absolute;
+    right: 0px;
+}
+
+#ues-text {
+    display: none;
+    opacity: 0;
+}
+
+.pie-lab-text {
+    position: absolute;
+    left: 0px;
+}
+
+#lab-text {
+    display: none;
+    opacity: 0;
+}
+
+.pie-project-text {
+    position: absolute;
+}
+
+#project-text {
+    display: none;
+    opacity: 0;
 }
 
 .contact-us {
@@ -466,13 +563,13 @@ body ol li a {
 
 .ues-map {
     height: 500px;
-    width: 35vw;
+    width: 30vw;
     overflow: hidden;
 }
 
 .email-container {
-    width: 35vw;
-    height: 400px;
+    width: 30vw;
+    height: 350px;
     color:white;
     background:var(--mainColor);
     border-radius: 20px;
@@ -553,6 +650,12 @@ body ol li a {
 .calendar-container {
     margin-top:40px;
 }
+
+/* SHOP */
+.store-photo {
+    height:300px;
+}
+
 
 /* RESPONSIVE STUFF */
 @media screen and (max-width: 1200px) {

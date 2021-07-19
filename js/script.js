@@ -121,3 +121,34 @@ document.getElementById("menu-button").addEventListener("mouseover",function(){
 document.getElementById("menu-button").addEventListener("mouseleave",function(){
     menuButton.style.display = "none";
 });
+
+//FEE BREAKDOWN
+let labPie = document.getElementById("pie-circle");
+
+labPie.addEventListener("click",function(){
+    fadeIn(document.getElementById("lab-text"));
+});
+
+labPie.addEventListener("mouseout",function(){
+    fadeOut(document.getElementById("lab-text"));
+});
+
+let projectPie = document.getElementById("pie-circle");
+
+projectPie.addEventListener("click",function(){
+    fadeIn(document.getElementById("lab-text"));
+});
+
+projectPie.addEventListener("mouseout",function(){
+    fadeOut(document.getElementById("lab-text"));
+});
+
+let uesPie = document.getElementById("pie-lab");
+
+uesPie.addEventListener("click",function(){
+    fadeIn(document.getElementById("lab-text"));
+});
+
+uesPie.addEventListener("mouseout",function(){
+    fadeOut(document.getElementById("lab-text"));
+});
