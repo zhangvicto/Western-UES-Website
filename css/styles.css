@@ -615,7 +615,6 @@ body ol li a {
 .contact-us {
     width:80vw;
     margin: 0 auto;
-    height: 400px;
     margin-bottom: 40px;
 }
 
@@ -623,9 +622,11 @@ body ol li a {
     height: 500px;
     width: 30vw;
     overflow: hidden;
+    display: inline;
 }
 
 .email-container {
+    display: inline-block;
     width: 30vw;
     height: 350px;
     color:white;
