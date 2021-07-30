@@ -23,18 +23,63 @@
     <!-- MENU -->
     <div class="menu-container">
         <ol>
-            <a href="/"><img src="img/logo.png" class="menu-image"></a>
+            <a href=""><img src="img/logo.png" class="menu-image"></a>
             <div class="menu-items">
-                <li><a href="/about">About</a></li>
-                <li><a href="/events">Events</a></li>
-                <li><a href="/join">Join Us</a></li>
-                <li><a href="/store">Store</a></li>
-                <li><a href="/spaces">Spaces</a></li>
-                <li><a href="/clubs">Clubs</a></li>
-                <li>Committees
-                    <div class="menu-dropdown" id="comittees-dropdown">
-                        <div class="dropdown-item">Wellness</div>
-                        <div class="dropdown-item">Environment</div>
+                <li id="menu-about">
+                    <a href="/about">Western</a>
+                    <div class="menu-dropdown" id="western-dropdown">
+                        <div class="dropdown-item"><a href="/about">About Us</a></div>
+                        <div class="dropdown-item"><a href="/about">Culture</a></div>
+                        <div class="dropdown-item"><a href="/about">Contact Us</a></div>
+                    </div>
+                </li>
+                <li class="menu-join">
+                    <a href="/join">Join Us</a>
+                    <div class="menu-dropdown" id="join-dropdown">
+                        <div class="dropdown-item"><a href="/clubs">Clubs</a></div>
+                        <div class="dropdown-item"><a href="">Conferences</a></div>
+                        <div class="dropdown-item"><a href="">Events</a></div>
+                        <div class="dropdown-item"><a href="">Wellness Committee</a></div>
+                        <div class="dropdown-item"><a href="">Sustainability Committee</a></div>
+                        <div class="dropdown-item"><a href="">Discord Committee</a></div>
+                        <div class="dropdown-item"><a href="">Blogs</a></div>
+                    </div>
+                </li>
+                <li id="menu-council">
+                    <a href="/team">Council</a>
+                    <div class="menu-dropdown" id="council-dropdown">
+                        <div class="dropdown-item"><a href="/team">Operations</a></div>
+                        <div class="dropdown-item"><a href="/team">Our Team</a></div>
+                        <div class="dropdown-item"><a href="">Elections</a></div>
+                    </div>
+                </li>
+                <li id="menu-admin">
+                    <a href="/admin">Admin</a>
+                    <div class="menu-dropdown" id="admin-dropdown">
+                        <div class="dropdown-item"><a href="/team">Council Resources</a></div>
+                        <div class="dropdown-item"><a href="/team">Exec Updates</a></div>
+                        <div class="dropdown-item"><a href="">Finances</a></div>
+                        <div class="dropdown-item"><a href="">Governing Docs</a></div>
+                        <div class="dropdown-item"><a href="">SRA</a></div>
+                </li>
+                <li id="menu-store">
+                    <a href="/store">Eng Merch</a>
+                    <div class="menu-dropdown" id="store-dropdown">
+                        <div class="dropdown-item"><a href="">+/- Store</a></div>
+                        <div class="dropdown-item"><a href="">Boilersuits</a></div>
+                        <div class="dropdown-item"><a href="">Eng Jackets</a></div>
+                    </div>
+                </li>
+                <li id="menu-coop">
+                    <a href="/coop">Co-op</a>
+                    <div class="menu-dropdown" id="coop-dropdown">
+                        <div class="dropdown-item"><a href="">Academic Resources</a></div>
+                    </div>
+                </li>
+                <li id="menu-campaign">
+                    <a href="/campaign">EDI</a>
+                    <div class="menu-dropdown" id="campaign-dropdown">
+                        <div class="dropdown-item"><a href="">Action Plan</a></div>
                     </div>
                 </li>
             </div>
@@ -60,6 +105,10 @@
         </ol>
     </div>
 
+    <!-- RANDOM BACKGROUND SHAPES -->
+    <img src="./img/Blob1.svg" class="background-blob1">
+    <img src="./img/Blob2.svg" class="background-blob2">
+
     <!-- ALERT -->
     <div class="alert" id="alert1"><a href="https://www.eng.uwo.ca/Engineering-COVID-19-FAQ.html"
             style="text-decoration: none;color:white;">Learn more about COVID-19</a>
@@ -72,7 +121,7 @@
         <div class="slide slide1" id="slide1">
             <div class="slide-text">
                 <div class="slide-text-title">
-                    Western Engineering Undergraduate Society
+                    Western UES
                 </div>
                 <div class="slide-text-description">
                     Creating the best engineering experience possible.
@@ -120,7 +169,7 @@
         </div>
         <div class="up-event-box-container">
             <div class="up-event-box event-1">
-                <div class="up-event-name">Comissioner Apps</div>
+                <div class="up-event-name">Commissioner Apps</div>
                 <div class="up-event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     interdum justo eget orci finibus mattis. Nulla convallis ex vitae urna auctor hendrerit. Curabitur
                     sit amet mi sit amet urna ullamcorper ultricies ut convallis ante. Pellentesque a hendrerit metus.
@@ -129,7 +178,7 @@
                 </div>
             </div>
             <div class="up-event-box event-2">
-                <div class="up-event-name">Comissioner Apps</div>
+                <div class="up-event-name">Commissioner Apps</div>
                 <div class="up-event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     interdum justo eget orci finibus mattis. Nulla convallis ex vitae urna auctor hendrerit. Curabitur
                     sit amet mi sit amet urna ullamcorper ultricies ut convallis ante. Pellentesque a hendrerit metus.
@@ -138,7 +187,7 @@
                 </div>
             </div>
             <div class="up-event-box event-3">
-                <div class="up-event-name">Comissioner Apps</div>
+                <div class="up-event-name">Commissioner Apps</div>
                 <div class="up-event-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                     interdum justo eget orci finibus mattis. Nulla convallis ex vitae urna auctor hendrerit. Curabitur
                     sit amet mi sit amet urna ullamcorper ultricies ut convallis ante. Pellentesque a hendrerit metus.
@@ -168,7 +217,7 @@
             © Western UES 2021
         </div>
         <div class="footer-other">
-            <a href="https://drive.google.com/drive/folders/1lU_kL6YZFE7iFjf69v10A3VZHE8471Ge">Public Resources</a>
+            
         </div>
 
         <div class="footer-socials">

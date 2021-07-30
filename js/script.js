@@ -108,47 +108,75 @@ carousel();
 
 // stopCarousel();
 
-//Dropdown
-document.getElementById("")
+//DROP DOWN MENU
+let aboutMenu = document.getElementById("menu-about");
+let westernDropdown = document.getElementById("western-dropdown");
+let joinMenu = document.getElementById("menu-join");
+let joinDropdown = document.getElementById("join-dropdown");
+let councilMenu = document.getElementById("menu-council");
+let adminMenu = document.getElementById("western-dropdown");
+let adminDropdown = document.getElementById("western-dropdown");
+let storeMenu = document.getElementById("menu-store");
+let storeDropdown = document.getElementById("store-dropdown");
+let coopMenu = document.getElementById("menu-coop");
+let coopDropdown = document.getElementById("coop-dropdown");
+let campaignMenu = document.getElementById("menu-campaign");
+let campaignDropdown = document.getElementById("campaign-dropdown");
 
-//Menu Button for Mobile
+//aboutMenu.addEventListener("mouseenter", fadeIn(westernDropdown));
+
+
+
+//MOBILE MENU
 let menuButton = document.getElementById("menu-mobile");
 
-document.getElementById("menu-button").addEventListener("mouseover",function(){
+document.getElementById("menu-button").addEventListener("mouseover", function () {
     menuButton.style.display = "block";
 });
 
-document.getElementById("menu-button").addEventListener("mouseleave",function(){
+document.getElementById("menu-button").addEventListener("mouseleave", function () {
     menuButton.style.display = "none";
 });
 
 //FEE BREAKDOWN
 let labPie = document.getElementById("pie-circle");
 
-labPie.addEventListener("click",function(){
-    fadeIn(document.getElementById("lab-text"));
-});
+if (labPie) {
+    labPie.addEventListener("mouseover", function () {
+        fadeIn(document.getElementById("lab-text"));
+    });
+}
 
-labPie.addEventListener("mouseout",function(){
-    fadeOut(document.getElementById("lab-text"));
-});
+if (labPie) {
+    labPie.addEventListener("mouseout", function () {
+        fadeOut(document.getElementById("lab-text"));
+    });
+}
 
 let projectPie = document.getElementById("pie-circle");
 
-projectPie.addEventListener("click",function(){
-    fadeIn(document.getElementById("lab-text"));
-});
+if (projectPie) {
+    projectPie.addEventListener("click", function () {
+        fadeIn(document.getElementById("lab-text"));
+    });
+}
 
-projectPie.addEventListener("mouseout",function(){
-    fadeOut(document.getElementById("lab-text"));
-});
+if (projectPie) {
+    projectPie.addEventListener("mouseout", function () {
+        fadeOut(document.getElementById("lab-text"));
+    });
+}
 
 let uesPie = document.getElementById("pie-lab");
 
-uesPie.addEventListener("click",function(){
-    fadeIn(document.getElementById("lab-text"));
-});
+if (uesPie) {
+    uesPie.addEventListener("click", function () {
+        fadeIn(document.getElementById("lab-text"));
+    });
+}
 
-uesPie.addEventListener("mouseout",function(){
-    fadeOut(document.getElementById("lab-text"));
-});
+if (uesPie) {
+    uesPie.addEventListener("mouseout", function () {
+        fadeOut(document.getElementById("lab-text"));
+    });
+}
