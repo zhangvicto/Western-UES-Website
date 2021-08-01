@@ -114,8 +114,9 @@ let westernDropdown = document.getElementById("western-dropdown");
 let joinMenu = document.getElementById("menu-join");
 let joinDropdown = document.getElementById("join-dropdown");
 let councilMenu = document.getElementById("menu-council");
-let adminMenu = document.getElementById("western-dropdown");
-let adminDropdown = document.getElementById("western-dropdown");
+let councilDropdown = document.getElementById("council-dropdown");
+let adminMenu = document.getElementById("menu-admin");
+let adminDropdown = document.getElementById("admin-dropdown");
 let storeMenu = document.getElementById("menu-store");
 let storeDropdown = document.getElementById("store-dropdown");
 let coopMenu = document.getElementById("menu-coop");
@@ -123,8 +124,61 @@ let coopDropdown = document.getElementById("coop-dropdown");
 let campaignMenu = document.getElementById("menu-campaign");
 let campaignDropdown = document.getElementById("campaign-dropdown");
 
-//aboutMenu.addEventListener("mouseenter", fadeIn(westernDropdown));
+aboutMenu.addEventListener("mouseenter", function(){
+    fadeIn(westernDropdown);
+});
 
+aboutMenu.addEventListener("mouseleave", function() {
+    fadeOut(westernDropdown);
+});
+
+joinMenu.addEventListener("mouseenter", function(){
+    fadeIn(joinDropdown);
+});
+
+joinMenu.addEventListener("mouseleave", function() {
+    fadeOut(joinDropdown);
+});
+
+councilMenu.addEventListener("mouseenter", function(){
+    fadeIn(councilDropdown);
+});
+
+councilMenu.addEventListener("mouseleave", function() {
+    fadeOut(councilDropdown);
+});
+
+adminMenu.addEventListener("mouseenter", function(){
+    fadeIn(adminDropdown);
+});
+
+adminMenu.addEventListener("mouseleave", function() {
+    fadeOut(adminDropdown);
+});
+
+storeMenu.addEventListener("mouseenter", function(){
+    fadeIn(storeDropdown);
+});
+
+storeMenu.addEventListener("mouseleave", function() {
+    fadeOut(storeDropdown);
+});
+
+coopMenu.addEventListener("mouseenter", function(){
+    fadeIn(coopDropdown);
+});
+
+coopMenu.addEventListener("mouseleave", function() {
+    fadeOut(coopDropdown);
+});
+
+campaignMenu.addEventListener("mouseenter", function(){
+    fadeIn(campaignDropdown);
+});
+
+campaignMenu.addEventListener("mouseleave", function() {
+    fadeOut(campaignDropdown);
+});
 
 
 //MOBILE MENU

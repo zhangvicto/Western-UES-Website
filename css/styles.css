@@ -16,7 +16,7 @@ body {
     --mainColor: #4F2683;
     --accentColorDark: rgba(153, 120, 173, 0.25);
     --accentColorLight: rgba(116, 185, 154, 0.25);
-    --footerColor: #807F83;
+    --footerColor: #1b1b1b;
 }
 
 /* BODY */
@@ -72,14 +72,14 @@ body ol {
     display:flex;
     align-items: center;
     margin: 20px;
-    margin-right: 5vw;
+    margin-right: 10vw;
 }
 
 body ol li {
     padding-left:20px;
     padding-right:20px;
     display: inline-block;
-    width: 80px;
+    width: 75px;
 }
 
 body ol li:hover {
@@ -95,6 +95,16 @@ body ol li a:hover {
 body ol li a {
     text-decoration: none;
     color:black;
+}
+
+.menu-dropdown {
+    background-color: white;
+    border-color: lightgray;
+    border-width: 2px;
+}
+
+.dropdown-item {
+    width:100%;
 }
 
 #western-dropdown {
@@ -152,7 +162,7 @@ body ol li a {
 .background-blob1 {
     right:0px;
     position: absolute;
-    top: 450px;
+    top: 400px;
     z-index: -1;
     width: 30vw;
 }
@@ -162,6 +172,7 @@ body ol li a {
     position: absolute;
     bottom: 0;
     z-index: -1;
+    width: 30vw;
 }
 
 /* ALERT */
@@ -215,7 +226,7 @@ body ol li a {
 
 /* CAROUSEL */
 .main-carousel {
-    margin-top: 10px;
+    margin-top: 12px;
     width: 100%;
     height: 70vh;
     display: flex;
@@ -406,6 +417,8 @@ body ol li a {
     justify-content: center;
     height:60px;
     bottom:0;
+    -webkit-box-shadow: 0px -6px 20px 0px rgba(0,0,0,0.27); 
+    box-shadow: 0px -6px 20px 0px rgba(0,0,0,0.27);
 }
 
 .footer-text {
@@ -626,12 +639,13 @@ body ol li a {
 }
 
 .email-container {
+    margin-top: 20px;
     display: inline-block;
     width: 30vw;
     height: 350px;
     color:white;
     background:var(--mainColor);
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     position: relative;
 }
 
