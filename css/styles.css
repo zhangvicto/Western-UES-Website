@@ -846,8 +846,8 @@ body ol li a {
 .conferences-container {
     width:80vw;
     margin: 0 auto;
-    display: flex;
     align-content: center;
+    margin-bottom: 20px;
 }
 
 .conferences-title {
@@ -855,12 +855,49 @@ body ol li a {
     width: 100%;
 }
 
-.conference-box {
+.conferences-box-container {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+}
 
+.conference-box {
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    padding:25px;
+    margin-bottom:25px;
+    background-color: rgb(255,255,255,1);
 }
 
 .conference-name {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
 
+.conference-image {
+    float: right;
+    margin:10px;
+}
+
+.conference-mission {
+    font-weight: 600;
+    text-align: left;
+    margin-top:15px;
+}
+
+.conference-mission-text {
+    font-weight: 400;
+}
+
+.conference-objective {
+    font-weight: 600;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.conference-objective-text {
+    font-weight: 400;
 }
 
 /* SHOP */
