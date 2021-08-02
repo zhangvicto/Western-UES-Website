@@ -299,7 +299,6 @@ body ol li a {
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .slide1 {
@@ -408,7 +407,6 @@ body ol li a {
     margin-top: 10px;
     position: relative;
     display: inline-block;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .up-event-photo-description {
@@ -480,7 +478,6 @@ body ol li a {
     border-radius: 20px;
     margin-top: 15px;
     justify-content: center;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .mission-description-text {
@@ -820,6 +817,50 @@ body ol li a {
 
 .calendar-container {
     margin-top:40px;
+}
+
+/* GET INVOLVED */
+.sign-up-container {
+    width:80vw;
+    margin: 0 auto;
+}
+
+.sign-up-title {
+
+}
+
+.blog-container {
+
+}
+
+.blog-title {
+
+}
+
+.blog-post {
+    width:80vw;
+    margin: 0 auto;
+    display: flex;
+}
+
+.conferences-container {
+    width:80vw;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+.conferences-title {
+    text-align: left;
+    width: 100%;
+}
+
+.conference-box {
+
+}
+
+.conference-name {
+
 }
 
 /* SHOP */

@@ -95,7 +95,10 @@ function carousel() {
     }
 }
 
-carousel();
+if (document.getElementById("slide1")) {
+    carousel();
+}
+
 
 //if click on circle then stop carousel
 // function stopCarousel() {
