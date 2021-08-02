@@ -84,35 +84,57 @@ body ol li {
     display: inline-block;
     width: 80px;
     position: relative;
-}
-
-body ol li:hover {
-    color:var(--mainColor);
-    transition-duration: 500ms;
-}
-
-body ol li a:hover {
-    color:var(--mainColor);
-    transition-duration: 500ms;
+    font-weight: 600;
 }
 
 body ol li a {
-    font-weight: 600;
     text-decoration: none;
     color:rgb(90, 84, 84);
 }
 
+.menu-top-item:hover {
+    color:var(--mainColor);
+    transition-duration: 500ms;
+}
+
+.menu-bottom-item {
+    border-radius: 0 0 15px 15px;
+}
+
 .menu-dropdown {
     background-color: var(--bodyColor);
+    position: absolute;
+    width: 200%;
+    text-align: center;
+    left:50%;
+    transform: translate(-50%, 0);
+    border-radius: 0 0 15px 15px;
     border-color: lightgray;
     border-width: 2px;
-    position: absolute;
-    width: 100%;
+    padding-top: 10px;
 }
 
 .dropdown-item {
-    margin-top:5px;
+    border-color: lightgray;
+    border-width: 2px;
     width:100%;
+    transition-duration: 200ms;
+    padding-top:4px;
+    padding-bottom: 4px;
+}
+
+.dropdown-item:hover {
+    background-color: var(--mainColor);
+    transition-duration: 200ms;
+}
+
+.dropdown-item a {
+    transition-duration: 200ms;
+}
+
+.dropdown-item:hover a { 
+    color:white;
+    transition-duration: 200ms;
 }
 
 #western-dropdown {
@@ -297,7 +319,25 @@ body ol li a {
     z-index: -1;
 }
 
-.slide-background {
+.slide-background1 {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height:60%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.slide-background2 {
+    border-radius: 30px 0px 0px 30px ; 
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40%;
+    height:100%;
+    position: relative;
+}
+
+.slide-background3 {
     border-radius: 30px 0px 0px 30px ; 
     background-color: rgba(0, 0, 0, 0.3);
     width: 40%;
@@ -317,12 +357,10 @@ body ol li a {
 .slide-text-title {
     font-size: 48px;
     font-weight: 700;
-    text-align: left;
 }
 
 .slide-text-description {
     font-size: 20px;
-    text-align: left;
 }
 
 .cta-button {
@@ -798,7 +836,7 @@ body ol li a {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .menu-items {
         display: none;
     }
