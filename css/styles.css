@@ -83,6 +83,7 @@ body ol li {
     padding-right:20px;
     display: inline-block;
     width: 80px;
+    position: relative;
 }
 
 body ol li:hover {
@@ -102,11 +103,15 @@ body ol li a {
 }
 
 .menu-dropdown {
+    background-color: var(--bodyColor);
     border-color: lightgray;
     border-width: 2px;
+    position: absolute;
+    width: 100%;
 }
 
 .dropdown-item {
+    margin-top:5px;
     width:100%;
 }
 
@@ -145,11 +150,11 @@ body ol li a {
 
 /* MOBILE MENU */
 .menu-mobile-container {
+
 }
 
 .menu-button {
     font-size:30px;
-    font-weight: 200;
     display: none;
     position: absolute;
     right: 0;
