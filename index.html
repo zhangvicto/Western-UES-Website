@@ -11,8 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -29,8 +30,8 @@
                     <a href="/about">Western</a>
                     <div class="menu-dropdown" id="western-dropdown">
                         <div class="dropdown-item"><a href="/about">About Us</a></div>
-                        <div class="dropdown-item"><a href="/about">Culture</a></div>
-                        <div class="dropdown-item"><a href="/about">Contact Us</a></div>
+                        <div class="dropdown-item"><a href="/about#culture">Culture</a></div>
+                        <div class="dropdown-item"><a href="/about#contact">Contact Us</a></div>
                     </div>
                 </li>
                 <li id="menu-join">
@@ -65,9 +66,9 @@
                 <li id="menu-store">
                     <a href="/store">Eng Merch</a>
                     <div class="menu-dropdown" id="store-dropdown">
-                        <div class="dropdown-item"><a href="">+/- Store</a></div>
-                        <div class="dropdown-item"><a href="">Boilersuits</a></div>
-                        <div class="dropdown-item"><a href="">Eng Jackets</a></div>
+                        <div class="dropdown-item"><a href="/shop">+/- Store</a></div>
+                        <div class="dropdown-item"><a href="/jacket">Boilersuits</a></div>
+                        <div class="dropdown-item"><a href="/jacket">Eng Jackets</a></div>
                     </div>
                 </li>
                 <li id="menu-coop">
@@ -119,34 +120,46 @@
     <div class="main-carousel">
 
         <div class="slide slide1" id="slide1">
-            <div class="slide-text">
-                <div class="slide-text-title">
-                    Western UES
-                </div>
-                <div class="slide-text-description">
-                    Creating the best engineering experience possible.
+            <div class="slide-background">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        <img src="./img/logo_white.png" width=100px>
+                        <br>
+                        Western UES
+                    </div>
+                    <div class="slide-text-description">
+                        Creating the best engineering experience possible.
+                        <br><br>
+                        <a class="cta-button" href="https://www.eng.uwo.ca/">Join Us Today</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="slide slide2" id="slide2">
-            <div class="slide-text">
-                <div class="slide-text-title">
-                    Photo 2
-                </div>
-                <div class="slide-text-description">
-                    Creating the best engineering experience possible.
+            <div class="slide-background">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        Western UES
+                    </div>
+                    <div class="slide-text-description">
+                        Creating the best engineering experience possible.
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="slide slide3" id="slide3">
-            <div class="slide-text">
-                <div class="slide-text-title">
-                    Photo 3
-                </div>
-                <div class="slide-text-description">
-                    Creating the best engineering experience possible.
+            <div class="slide-background">
+                <div class="slide-text">
+                    <div class="slide-text-title">
+                        Eng Jackets
+                    </div>
+                    <div class="slide-text-description">
+                        Check out the UES +/- Store for your favourite merch and more!
+                        <br><br>
+                        <a class="cta-button" href="https://www.eng.uwo.ca/">Take Me There</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -198,26 +211,25 @@
         </div>
     </div>
 
-    <hr class="line-break">
 
     <!-- MISSION -->
     <div class="mission">
         <div class="title mission-title"> Our Mission </div>
         <div class="mission-description">
             <span class="mission-description-text">The Westerm UES is dedicated to helping each and every student
-                receive a full
-                Western Engineering experience and enjoy their time here.
+                receive a full Western Engineering experience and enjoy their time here.
                 <br><a href="/about" style="color:white;"><strong>Learn More</strong></a></span>
         </div>
     </div>
 
     <!-- FOOTER -->
     <div class="footer">
+        <a href="" class="footer-image">
+            <img src="./img/logo_white.png" height="30px">
+            <span style="margin-left:10px;">Western UES</span>
+        </a>
         <div class="footer-text">
-            © Western UES 2021
-        </div>
-        <div class="footer-other">
-            
+            © 2021 Western UES
         </div>
 
         <div class="footer-socials">
