@@ -224,11 +224,10 @@ menuButton.addEventListener("click", function () {
 //MOBILE DROPDOWN
 let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
 
-
 for (let i = 0; i < mobileMenuItems.length; i++) {
     let menuButtonState = 0;
     mobileMenuItems[i].addEventListener("click", function () {
-        if(menuButtonState == 0) {
+        if (menuButtonState == 0) {
             mobileMenuItems[i].querySelector(".mobile-menu-dropdown").style.display = "block";
             menuButtonState = 1;
         } else {
@@ -237,6 +236,13 @@ for (let i = 0; i < mobileMenuItems.length; i++) {
         }
     });
 }
+
+//HIDE MOBILE MENU ON WINDOW RESIZE
+window.addEventListener('resize', function(){
+    fadeOut(mobileMenu);
+    buttonState = 0;
+    menuButton.classList.remove("open");
+});
 
 
 //FEE BREAKDOWN
@@ -281,3 +287,138 @@ if (uesPie) {
         fadeOut(document.getElementById("lab-text"));
     });
 }
+
+//JACKETS GALLERY
+let galleryButton1 = document.getElementById("button-gallery-1");
+let galleryButton2 = document.getElementById("button-gallery-2");
+let galleryClose = document.getElementById("gallery-close");
+
+let gallery1 = document.getElementById("gallery-1");
+
+galleryButton1.addEventListener("click", function () {
+    fadeIn(gallery1);
+});
+
+galleryClose.addEventListener("click", function () {
+    fadeOut(gallery1);
+})
+
+
+//GALLERY
+
+!(function(d){
+let itemClassName = "jacket-gallery-photo";
+let items = d.getElementsByClassName(itemClassName);
+let totalItems = items.length;
+let slide = 0;
+let moving = true;
+
+// Set classes
+function setInitialClasses() {
+    // Targets the previous, current, and next items
+    // This assumes there are at least three items.
+    items[totalItems - 1].classList.add("prev");
+    items[0].classList.add("active");
+    items[1].classList.add("next");
+}
+
+// Set event listeners
+function setEventListeners() {
+    let next = d.getElementsByClassName("jacket-gallery-button--next")[0];
+    let prev = d.getElementsByClassName("jacket-gallery-button--prev")[0];
+    next.addEventListener("click", function() {moveNext()});
+    prev.addEventListener("click", function() {movePrev()});
+}
+
+function disableInteraction() {
+    // Set 'moving' to true for the same duration as our transition.
+    // (0.5s = 500ms)
+
+    moving = true;
+    // setTimeout runs its function once after the given time
+    setTimeout(function () {
+        moving = false
+    }, 500);
+}
+
+function moveCarouselTo(slide) {
+    // Check if carousel is moving, if not, allow interaction
+    if (!moving) {
+        // temporarily disable interactivity
+        disableInteraction();
+        // Update the "old" adjacent slides with "new" ones
+        let newPrevious = slide - 1,
+            newNext = slide + 1,
+            oldPrevious = slide - 2,
+            oldNext = slide + 2;
+        // Test if carousel has more than three items
+        if ((totalItems - 1) > 3) {
+            // Checks and updates if the new slides are out of bounds
+            if (newPrevious <= 0) {
+                oldPrevious = (totalItems - 1);
+            } else if (newNext >= (totalItems - 1)) {
+                oldNext = 0;
+            }
+            // Checks and updates if slide is at the beginning/end
+            if (slide === 0) {
+                newPrevious = (totalItems - 1);
+                oldPrevious = (totalItems - 2);
+                oldNext = (slide + 1);
+            } else if (slide === (totalItems - 1)) {
+                newPrevious = (slide - 1);
+                newNext = 0;
+                oldNext = 1;
+            }
+
+            items[oldPrevious].className = itemClassName;
+            items[oldNext].className = itemClassName;
+            // Add new classes
+            items[newPrevious].className = itemClassName + " prev";
+            items[slide].className = itemClassName + " active";
+            items[newNext].className = itemClassName + " next";
+        }
+    }
+}
+
+
+// Next navigation handler
+function moveNext() {
+    // Check if moving
+    if (!moving) {
+        // If it's the last slide, reset to 0, else +1
+        if (slide === (totalItems - 1)) {
+            slide = 0;
+        } else {
+            slide++;
+        }
+        // Move carousel to updated slide
+        moveCarouselTo(slide);
+    }
+}
+
+// Previous navigation handler
+function movePrev() {
+    // Check if moving
+    if (!moving) {
+        // If it's the first slide, set as the last slide, else -1
+        if (slide === 0) {
+            slide = (totalItems - 1);
+        } else {
+            slide--;
+        }
+
+        // Move carousel to updated slide
+        moveCarouselTo(slide);
+    }
+}
+
+function initCarousel() {
+    setInitialClasses();
+    setEventListeners();
+    // Set moving to false so that the carousel becomes interactive
+    moving = false;
+}
+
+initCarousel();
+
+}(document));

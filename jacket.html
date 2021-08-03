@@ -158,15 +158,21 @@
         </ol>
     </div>
 
-        <!-- RANDOM BACKGROUND SHAPES -->
-        <img src="./img/Blob4.svg" class="background-blob1">
-        <img src="./img/Blob3.svg" class="background-blob2">
+    <!-- RANDOM BACKGROUND SHAPES -->
+    <img src="./img/Blob4.svg" class="background-blob1">
+    <img src="./img/Blob3.svg" class="background-blob2">
 
     <!-- ENG JACKET -->
     <div class="jacket-container">
         <div class="title jacket-title">Engineering Jacket</div>
 
-        <img src="img/shop/jacket2.jpg" class="store-photo1">
+        <div class="store-photo1" id="button-gallery-1">
+            <img src="img/shop/jacket2.jpg" style="border-radius: 40px;" height="300px">
+            <div class="store-photo-text">
+                <span style="position: absolute;height:20px;left:50%;top:50%;transform: translate(-50%,-50%);">Click for
+                    gallery</span>
+            </div>
+        </div>
         <strong>COVID-19 Update:</strong>
         <br>
         Jackets were available for pickup March 9-10, 2020. Due to the current situation, jacket pickup is temporarily
@@ -184,7 +190,8 @@
         <br>
         <strong>Cost:</strong>
         <br>
-        Jackets will cost <strong>$435 including tax</strong> in the <strong>2019-2020 year</strong>, You can add 1-2 inside mickey
+        Jackets will cost <strong>$435 including tax</strong> in the <strong>2019-2020 year</strong>, You can add 1-2
+        inside mickey
         pockets for an additional $10 each. Purchases can be done through <strong>Cash, Cheque, or Credit.</strong>
         <br>
         <a href="/shop" class="cta-button"
@@ -193,11 +200,34 @@
 
     </div>
 
+    <!-- GALLERY -->
+    <div class="jacket-gallery-container" id="gallery-1">
+        <div class="jacket-gallery-overlay">
+            <div class="jacket-gallery-wrapper">
+                <div class="jacket-gallery-content">
+                    <div class="jacket-gallery-x " id="gallery-close"></div>
+                    <img class="jacket-gallery-photo initial" src="./img/shop/jacket.jpg">
+                    <img class="jacket-gallery-photo" src="./img/front2.jpg">
+                    <img class="jacket-gallery-photo" src="./img/front3.jpg">
+    
+                    <div class="jacket-gallery-button--next"></div>
+                    <div class="jacket-gallery-button--prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- BOILERSUIT -->
     <div class="boilersuit-container">
         <div class="title boilersuit-title">Boilersuit</div>
+        <div class="store-photo2">
+            <img src="img/shop/boilersuit.png" style="border-radius: 40px;" height="300px" id="button-gallery-2">
+            <div class="store-photo-text">
+                <span style="position: absolute;height:20px;left:50%;top:50%;transform: translate(-50%,-50%);">Click for
+                    gallery</span>
+            </div>
+        </div>
 
-        <img src="img/shop/boilersuit.png" class="store-photo2">
         Boilersuits are grey coveralls. The tradition of coveralls in Engineering began in the 1960s in Sweden and
         Finland.
         Their original purpose was to be worn when students visited companies but evolved into being used for partying
@@ -222,7 +252,7 @@
         be a Boilersuit this year!
         <br>
         <a href="/shop" class="cta-button"
-            style="position: absolute;height:auto;left:50%;transform: translate(-50%,0);margin-top:20px;">Coming
+            style="position: absolute;height:auto;left:50%;transform: translate(-50%,0);margin-top:20px;z-index: -1;">Coming
             Soon</a>
 
     </div>

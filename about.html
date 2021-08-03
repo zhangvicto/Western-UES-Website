@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <!-- MENU -->
     <div class="menu-container">
         <ol>
             <a href="/"><img src="img/logo.png" class="menu-image"></a>
@@ -86,22 +87,78 @@
 
     <!-- Mobile Menu -->
     <div class="menu-mobile-container">
-        <div class="menu-button" id="menu-button">&#8801;</div>
-        <ol class="menu-mobile-items" id="menu-mobile">
-            <li><a href="/about">About</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/join">Join Us</a></li>
-            <li><a href="/store">Store</a></li>
-            <li><a href="/spaces">Spaces</a></li>
-            <li><a href="/clubs">Clubs</a></li>
-            <li> Committees
-                <div class="mobile-dropdown">
-                    <div class="dropdown-item">Wellness</div>
-                    <div class="dropdown-item">Environment</div>
-                </div>
-            </li>
+        <div id="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ol>
+            <div class="mobile-menu-items" id="menu-mobile">
+                
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Western</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/about">About Us</a></div>
+                        <div class="mobile-dropdown-item"><a href="/about#culture">Culture</a></div>
+                        <div class="mobile-dropdown-item"><a href="/about#contact">Contact Us</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Join Us</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/clubs">Clubs</a></div>
+                        <div class="mobile-dropdown-item"><a href="/join">Conferences</a></div>
+                        <div class="mobile-dropdown-item"><a href="/events">Events</a></div>
+                        <div class="mobile-dropdown-item"><a href="/wellness">Wellness Committee</a></div>
+                        <div class="mobile-dropdown-item"><a href="/sustainability">Sustainability Committee</a></div>
+                        <div class="mobile-dropdown-item"><a href="/discord">Discord Committee</a></div>
+                        <div class="mobile-dropdown-item"><a href="/join#blog">Blogs</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Council</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/team">Operations</a></div>
+                        <div class="mobile-dropdown-item"><a href="/team">Our Team</a></div>
+                        <div class="mobile-dropdown-item"><a href="/team">Elections</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Admin</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/admin">Council Resources</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">Exec Updates</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">Finances</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">Governing Docs</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">SRA</a></div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Eng Merch</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/shop">+/- Store</a></div>
+                        <div class="mobile-dropdown-item"><a href="/jacket">Boilersuits</a></div>
+                        <div class="mobile-dropdown-item"><a href="/jacket">Eng Jackets</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Co-op</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/coop">Academic Resources</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">EDI</a>
+                    <div class="mobile-menu-dropdown" id="campaign-dropdown-mobile">
+                        <div class="mobile-dropdown-item mobile-menu-bottom-item"><a href="/action">Action Plan</a>
+                        </div>
+                    </div>
+                </li>
+            </div>
         </ol>
     </div>
+
+    <img src="./img/Blob3.svg" class="background-blob2">
 
     <!-- ABOUT US -->
     <div class="about-container">
@@ -189,20 +246,10 @@
         <br>
         There is a $150.00 Western Engineering Donation that you and every other undergraduate engineering student can
         make in addition to your tuition. This is an important donation that goes toward a variety of services and funds
-        built for the betterment of your student experience
+        built for the betterment of your student experience.
         <div class="pie-container">
             <div class="pie-chart">
-                <div class="circle"></div>
-                <div id="pie-ues" class="hold">
-                    <div class="circle" id="pie-circle"></div>
-                </div>
-                <div id="pie-project" class="hold">
-                    <div class="circle" id="pie-circle"></div>
-                </div>
-                <div id="pie-lab" class="hold">
-                    <div class="circle" id="pie-circle"></div>
-                </div>
-                <div class="circle-white"></div>
+                
             </div>
 
             <!-- TEXT -->

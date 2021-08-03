@@ -651,7 +651,6 @@ body ol li a {
     width:100%;
     height:auto;
     margin: 0 auto;
-    margin-top: 20px;
 }
 
 .about-title {
@@ -700,6 +699,12 @@ body ol li a {
 .sponsor-pic {
     width:15vw; 
     padding: 20px;
+    transition-duration: 250ms;
+}
+
+.sponsor-pic:hover {
+    transition-duration: 250ms;
+    transform:scale(1.3);
 }
 
 .fee-breakdown {
@@ -723,57 +728,16 @@ body ol li a {
     transform: translateY(-50%) translateX(-50%);
 }
 
-.circle {
-    transition: all 0.5s;
-    position: absolute;
-    height:300px;
-    width:300px;
-    border-radius: 100%;
-    background-color: #FFFF8F;
-    clip: rect(0px, 300px, 300px, 0px);
+.pie-ues {
+
 }
 
-.hold {
-    transition: all 0.5s;
-    position:absolute;
-    height:300px;
-    width:300px;
-    border-radius: 100%;
-    clip: rect(0px, 300px, 300px, 150px);
+.pie-lab {
+
 }
 
-.circle:hover {
-    background-color: yellow;
-}
+.pie-project {
 
-#pie-ues .circle {
-    background-color: var(--mainColor);
-    transform: rotate(0deg);
-}
-
-#pie-ues .circle:hover {
-    background-color: black;
-}
-
-#pie-project {
-    transform: rotate(13.3deg);
-}
-
-#pie-project .circle  {
-    transform: rotate(13.3deg);
-}
-
-#pie-lab {
-    transform: rotate(13.3deg);
-}
-
-#pie-lab .circle {
-    background-color: #cf9b00;
-    transform: rotate(63.3deg);
-}
-
-#pie-lab .circle:hover {
-    background-color: #cf6b00;
 }
 
 .circle-white {
@@ -1035,11 +999,33 @@ body ol li a {
 
 .store-photo1 {
     height:300px;
+    border-radius: 40px;
     float:right;
     margin:20px;
-    border-radius: 40px;
     transition-duration: 0.5s;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.1)
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.store-photo-text {
+    position:absolute;
+    height:100%;
+    width:100%;
+    left: 50%;
+    top:50%;
+    border-radius: 40px;
+    transform:translate(-50%,-50%);
+    display:none;
+    background-color: rgba(0,0,0,0.2);
+    color:white;
+    transition-duration: 250ms;
+    text-align: center;
+    cursor: pointer;
+}
+
+.store-photo1:hover .store-photo-text{
+    transition-duration: 250ms;
+    display:block;
 }
 
 .store-photo1:hover {
@@ -1056,10 +1042,157 @@ body ol li a {
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1)
 }
 
+.store-photo2:hover .store-photo-text{
+    transition-duration: 250ms;
+    display:block;
+}
+
 .store-photo2:hover {
     transition-duration: 0.5s;
     transform: scale(1.2);
 }
+
+.jacket-gallery-container {
+    display:none;
+    opacity: 0;
+    position:fixed;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+
+.jacket-gallery-overlay {
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.4);
+    position: relative;
+}
+
+.jacket-gallery-wrapper {
+    overflow: hidden;
+    width:90%;
+}
+
+.jacket-gallery-wrapper * {
+    box-sizing: border-box;
+}
+
+.jacket-gallery-content {
+    width:80vw;
+    transform-style: preserve-3d;
+    position: absolute;
+    background-color: white;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+.jacket-gallery-x {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    z-index: 1000;
+    cursor:pointer;
+    border:none;
+    background-color: transparent;
+}
+    
+.jacket-gallery-x:hover {
+    opacity: 1;
+}
+    
+.jacket-gallery-x:before, .jacket-gallery-x:after {
+    position: absolute;
+    left: 5px;
+    content: ' ';
+    height: 20px;
+    width: 3px;
+    border-radius: 2px;
+    background-color: black;
+}
+    
+.jacket-gallery-x:before {
+    transform: rotate(45deg);
+}
+    
+.jacket-gallery-x:after {
+    transform: rotate(-45deg);
+}  
+
+.jacket-gallery-photo {
+    opacity: 0;
+    position: absolute;
+    top:0;
+    width:60vw;
+    margin: 0 auto;
+    padding: 1rem 4rem;
+    z-index: 100;
+    transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.jacket-gallery-photo.initial,
+.jacket-gallery-photo.active {
+    opacity: 1;
+    position: relative;
+    z-index: 900;
+}
+
+.jacket-gallery-photo.prev,
+.jacket-gallery-photo.next {
+    z-index: 800;
+}
+
+.jacket-gallery-photo.prev {
+    transform:translateX(-100%);
+}
+
+.jacket-gallery-photo.next {
+    transform:translateX(100%);
+}
+
+.jacket-gallery-button--prev,
+.jacket-gallery-button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+  margin:10px;
+}
+.jacket-gallery-button--prev {
+  left:0;
+}
+.jacket-gallery-button--next {
+  right:0;
+}
+.jacket-gallery-button--prev::after,
+.jacket-gallery-button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.jacket-gallery-button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 
 
 /* SHOP */
