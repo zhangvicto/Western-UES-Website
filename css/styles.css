@@ -670,8 +670,8 @@ body ol li a {
 
 .about-text {
     margin: 0 auto;
-    width:50vw;
-    font-size: 15px;
+    width:60vw;
+    font-size: 16px;
     color: white;
     position: absolute;
     top:50%;
@@ -728,26 +728,60 @@ body ol li a {
     transform: translateY(-50%) translateX(-50%);
 }
 
-.pie-ues {
+.pie-wrapper {
+    position: relative;
+}
 
+.pie-piece {
+    position: absolute;
+    transition: 250ms;
+}
+
+.pie-piece:hover {
+    transition: 250ms;
+    transform: translatex(10%);
+    transform: scale(0.85);
+}
+
+.pie-ues {
+    width:102.37px;
+    top:0px;
 }
 
 .pie-lab {
-
+    width:150px;
+    left:0px;
+    top:0px;
 }
 
 .pie-project {
-
+    width:267.65578px;
+    right:0px;
+    top:37.1px;
 }
 
-.circle-white {
-    position:absolute;
-    height:175px;
-    width:175px;
-    border-radius: 50%;
-    background-color: white;
-    top:62.5px;
-    left:62.5px;
+.pie-middle-text {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: none;
+    opacity:0;
+}
+
+#donation-default {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display:block;
+    opacity: 1;
 }
 
 .pie-text {
@@ -765,28 +799,15 @@ body ol li a {
     right: 0px;
 }
 
-#ues-text {
-    display: none;
-    opacity: 0;
-}
-
 .pie-lab-text {
     position: absolute;
     left: 0px;
-}
-
-#lab-text {
     display: none;
     opacity: 0;
 }
 
 .pie-project-text {
     position: absolute;
-}
-
-#project-text {
-    display: none;
-    opacity: 0;
 }
 
 .contact-us {
@@ -899,7 +920,7 @@ body ol li a {
 }
 
 .blog-container {
-
+    display:flex;
 }
 
 .blog-title {
@@ -909,7 +930,7 @@ body ol li a {
 .blog-post {
     width:80vw;
     margin: 0 auto;
-    display: flex;
+    
 }
 
 .conferences-container {
@@ -1205,6 +1226,29 @@ body ol li a {
     body ol li {
         padding-left:10px;
         padding-right:10px;
+    }
+    .about-text {
+        height:50vh;
+        overflow-y:scroll;
+        
+    }
+
+    .about-text::-webkit-scrollbar
+    {
+      width: 5px;  /* for vertical scrollbars */
+      height: 5px; /* for horizontal scrollbars */
+    }
+    
+    .about-text::-webkit-scrollbar-track
+    {
+      background: none;
+    }
+    
+    .about-text::-webkit-scrollbar-thumb
+    {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius:20px;
+      height:30px;
     }
 }
 
