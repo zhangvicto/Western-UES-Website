@@ -244,6 +244,8 @@ body ol li a {
     position: relative;
     cursor: pointer;
     height:100%;
+    padding-top:10px;
+    padding-bottom:10px;
     transition-duration: 250ms;
 }
 
