@@ -63,7 +63,7 @@ function topMarginUp(element, dis, time, speed) {
 
 //CAROUSEL
 var i = 1;
-var carouselTime = 3000;
+var carouselTime = 4000;
 var carouselSize = 3;
 var carouselRun = 1;
 let circleColor = "rgba(53, 53, 53, 0.5)";
@@ -127,73 +127,116 @@ let coopDropdown = document.getElementById("coop-dropdown");
 let campaignMenu = document.getElementById("menu-campaign");
 let campaignDropdown = document.getElementById("campaign-dropdown");
 
-aboutMenu.addEventListener("mouseenter", function(){
+aboutMenu.addEventListener("mouseenter", function () {
     fadeIn(westernDropdown);
 });
 
-aboutMenu.addEventListener("mouseleave", function() {
+aboutMenu.addEventListener("mouseleave", function () {
     fadeOut(westernDropdown);
 });
 
-joinMenu.addEventListener("mouseenter", function(){
+joinMenu.addEventListener("mouseenter", function () {
     fadeIn(joinDropdown);
 });
 
-joinMenu.addEventListener("mouseleave", function() {
+joinMenu.addEventListener("mouseleave", function () {
     fadeOut(joinDropdown);
 });
 
-councilMenu.addEventListener("mouseenter", function(){
+councilMenu.addEventListener("mouseenter", function () {
     fadeIn(councilDropdown);
 });
 
-councilMenu.addEventListener("mouseleave", function() {
+councilMenu.addEventListener("mouseleave", function () {
     fadeOut(councilDropdown);
 });
 
-adminMenu.addEventListener("mouseenter", function(){
+adminMenu.addEventListener("mouseenter", function () {
     fadeIn(adminDropdown);
 });
 
-adminMenu.addEventListener("mouseleave", function() {
+adminMenu.addEventListener("mouseleave", function () {
     fadeOut(adminDropdown);
 });
 
-storeMenu.addEventListener("mouseenter", function(){
+storeMenu.addEventListener("mouseenter", function () {
     fadeIn(storeDropdown);
 });
 
-storeMenu.addEventListener("mouseleave", function() {
+storeMenu.addEventListener("mouseleave", function () {
     fadeOut(storeDropdown);
 });
 
-coopMenu.addEventListener("mouseenter", function(){
+coopMenu.addEventListener("mouseenter", function () {
     fadeIn(coopDropdown);
 });
 
-coopMenu.addEventListener("mouseleave", function() {
+coopMenu.addEventListener("mouseleave", function () {
     fadeOut(coopDropdown);
 });
 
-campaignMenu.addEventListener("mouseenter", function(){
+campaignMenu.addEventListener("mouseenter", function () {
     fadeIn(campaignDropdown);
 });
 
-campaignMenu.addEventListener("mouseleave", function() {
+campaignMenu.addEventListener("mouseleave", function () {
     fadeOut(campaignDropdown);
 });
 
 
+
 //MOBILE MENU
-let menuButton = document.getElementById("menu-mobile");
+let mobileMenu = document.getElementById("menu-mobile");
+let menuButton = document.getElementById("menu-button");
+let buttonState = 0;
 
-document.getElementById("menu-button").addEventListener("mouseover", function () {
-    menuButton.style.display = "block";
+menuButton.addEventListener("click", function () {
+    if (buttonState == 0) {
+        var op = 0.1;  // initial opacity
+        mobileMenu.style.display = 'flex';
+        var timer = setInterval(function () {
+            if (op >= 1) {
+                clearInterval(timer);
+            }
+            mobileMenu.style.opacity = op;
+            mobileMenu.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op += op * 0.1;
+        }, 8);
+        menuButton.classList.toggle("open");
+        buttonState = 1;
+
+    } else {
+        var op = 1;  // initial opacity
+        var timer = setInterval(function () {
+            if (op <= 0.1) {
+                clearInterval(timer);
+                mobileMenu.style.display = 'none';
+            }
+            mobileMenu.style.opacity = op;
+            mobileMenu.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.1;
+        }, 8);
+        menuButton.classList.remove("open");
+        buttonState = 0;
+    }
 });
 
-document.getElementById("menu-button").addEventListener("mouseleave", function () {
-    menuButton.style.display = "none";
-});
+//MOBILE DROPDOWN
+let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
+
+for (let i = 0; i < mobileMenuItems.length; i++) {
+    let menuButtonState = 0;
+    mobileMenuItems[i].addEventListener("click", function () {
+        if(menuButtonState == 0) {
+            mobileMenuItems[i].querySelector(".mobile-menu-dropdown").style.display = "block";
+            menuButtonState = 1;
+        } else {
+            mobileMenuItems[i].querySelector(".mobile-menu-dropdown").style.display = "none";
+            menuButtonState = 0;
+        }
+    });
+}
+
 
 //FEE BREAKDOWN
 let labPie = document.getElementById("pie-circle");
