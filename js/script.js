@@ -202,7 +202,6 @@ menuButton.addEventListener("click", function () {
             mobileMenu.style.filter = 'alpha(opacity=' + op * 100 + ")";
             op += op * 0.1;
         }, 8);
-        //topMarginDown(mobileMenu);
         menuButton.classList.toggle("open");
         buttonState = 1;
 
@@ -218,12 +217,13 @@ menuButton.addEventListener("click", function () {
             op -= op * 0.1;
         }, 8);
         menuButton.classList.remove("open");
-        buttonState = 0;
+        buttonState = 0; //reset button
     }
 });
 
 //MOBILE DROPDOWN
 let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
+
 
 for (let i = 0; i < mobileMenuItems.length; i++) {
     let menuButtonState = 0;

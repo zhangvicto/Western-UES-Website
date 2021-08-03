@@ -237,6 +237,7 @@ body ol li a {
     z-index: 3;
     flex-direction: column;
     background-color: var(--bodyColor);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1)
 }
 
 .mobile-menu-item {
@@ -480,8 +481,8 @@ body ol li a {
     text-align: center;
     font-weight: 700;
     color:white;
-    -webkit-box-shadow: 0px 0px 10px 0px var(--mainColor); 
-    box-shadow: 0px 0px 10px 0px var(--mainColor);
+    -webkit-box-shadow: 0px 0px 3px 0px var(--footerColor); 
+    box-shadow: 0px 0px 3px 0px var(--footerColor);
     transition-duration: 200ms;
 }
 
@@ -1004,10 +1005,66 @@ body ol li a {
     font-weight: 400;
 }
 
-/* SHOP */
-.store-photo {
-    height:300px;
+/* JACKET */
+.jacket-container {
+    margin: 0 auto;
+    width:80vw;
+    padding:20px;
+    padding-bottom: 80px;
+    text-align: left;
 }
+
+.jacket-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.boilersuit-container {
+    margin: 0 auto;
+    width:80vw;
+    padding:20px;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.boilersuit-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.store-photo1 {
+    height:300px;
+    float:right;
+    margin:20px;
+    border-radius: 40px;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1)
+}
+
+.store-photo1:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+.store-photo2 {
+    height:300px;
+    float:left;
+    margin:20px;
+    border-radius: 40px;
+    transition-duration: 0.5s;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1)
+}
+
+.store-photo2:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+
+/* SHOP */
+
+
 
 
 /* RESPONSIVE STUFF */

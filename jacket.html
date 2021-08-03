@@ -4,14 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-
     <title>Western UES</title>
     <meta name="description" content="Western UES">
     <meta name="author" content="UES">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -19,189 +19,217 @@
 </head>
 
 <body>
-<!-- MENU -->
-<div class="menu-container">
-    <ol>
-        <a href="/"><img src="img/logo.png" class="menu-image"></a>
-        <div class="menu-items">
-            <li id="menu-about">
-                <a href="/about" class="menu-top-item">Western</a>
-                <div class="menu-dropdown" id="western-dropdown">
-                    <div class="dropdown-item"><a href="/about">About Us</a></div>
-                    <div class="dropdown-item"><a href="/about#culture">Culture</a></div>
-                    <div class="dropdown-item menu-bottom-item"><a href="/about#contact">Contact Us</a></div>
-                </div>
-            </li>
-            <li id="menu-join">
-                <a href="/join" class="menu-top-item">Join Us</a>
-                <div class="menu-dropdown" id="join-dropdown">
-                    <div class="dropdown-item"><a href="/clubs">Clubs</a></div>
-                    <div class="dropdown-item"><a href="">Conferences</a></div>
-                    <div class="dropdown-item"><a href="">Events</a></div>
-                    <div class="dropdown-item"><a href="">Wellness Committee</a></div>
-                    <div class="dropdown-item"><a href="">Sustainability Committee</a></div>
-                    <div class="dropdown-item"><a href="">Discord Committee</a></div>
-                    <div class="dropdown-item menu-bottom-item"><a href="">Blogs</a></div>
-                </div>
-            </li>
-            <li id="menu-council">
-                <a href="/team" class="menu-top-item">Council</a>
-                <div class="menu-dropdown" id="council-dropdown">
-                    <div class="dropdown-item"><a href="/team">Operations</a></div>
-                    <div class="dropdown-item"><a href="/team">Our Team</a></div>
-                    <div class="dropdown-item menu-bottom-item"><a href="">Elections</a></div>
-                </div>
-            </li>
-            <li id="menu-admin">
-                <a href="/admin" class="menu-top-item">Admin</a>
-                <div class="menu-dropdown" id="admin-dropdown">
-                    <div class="dropdown-item"><a href="/team">Council Resources</a></div>
-                    <div class="dropdown-item"><a href="/team">Exec Updates</a></div>
-                    <div class="dropdown-item"><a href="">Finances</a></div>
-                    <div class="dropdown-item"><a href="">Governing Docs</a></div>
-                    <div class="dropdown-item menu-bottom-item"><a href="">SRA</a></div>
-            </li>
-            <li id="menu-store">
-                <a href="/store" class="menu-top-item">Eng Merch</a>
-                <div class="menu-dropdown" id="store-dropdown">
-                    <div class="dropdown-item"><a href="/shop">+/- Store</a></div>
-                    <div class="dropdown-item"><a href="/jacket">Boilersuits</a></div>
-                    <div class="dropdown-item menu-bottom-item"><a href="/jacket">Eng Jackets</a></div>
-                </div>
-            </li>
-            <li id="menu-coop">
-                <a href="/coop" class="menu-top-item">Co-op</a>
-                <div class="menu-dropdown" id="coop-dropdown">
-                    <div class="dropdown-item menu-bottom-item"><a href="">Academic Resources</a></div>
-                </div>
-            </li>
-            <li id="menu-campaign">
-                <a href="/campaign" class="menu-top-item">EDI</a>
-                <div class="menu-dropdown" id="campaign-dropdown">
-                    <div class="dropdown-item menu-bottom-item"><a href="">Action Plan</a></div>
-                </div>
-            </li>
-        </div>
-    </ol>
-</div>
-
-<!-- Mobile Menu -->
-<div class="menu-mobile-container">
-    <div id="menu-button">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <ol>
-        <div class="mobile-menu-items" id="menu-mobile">
-            
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">Western</a>
-                <div class="mobile-menu-dropdown">
-                    <div class="mobile-dropdown-item"><a href="/about">About Us</a></div>
-                    <div class="mobile-dropdown-item"><a href="/about#culture">Culture</a></div>
-                    <div class="mobile-dropdown-item"><a href="/about#contact">Contact Us</a></div>
-                </div>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">Join Us</a>
-                <div class="mobile-menu-dropdown">
-                    <div class="mobile-dropdown-item"><a href="/clubs">Clubs</a></div>
-                    <div class="mobile-dropdown-item"><a href="/join">Conferences</a></div>
-                    <div class="mobile-dropdown-item"><a href="/events">Events</a></div>
-                    <div class="mobile-dropdown-item"><a href="/wellness">Wellness Committee</a></div>
-                    <div class="mobile-dropdown-item"><a href="/sustainability">Sustainability Committee</a></div>
-                    <div class="mobile-dropdown-item"><a href="/discord">Discord Committee</a></div>
-                    <div class="mobile-dropdown-item"><a href="/join#blog">Blogs</a></div>
-                </div>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">Council</a>
-                <div class="mobile-menu-dropdown">
-                    <div class="mobile-dropdown-item"><a href="/team">Operations</a></div>
-                    <div class="mobile-dropdown-item"><a href="/team">Our Team</a></div>
-                    <div class="mobile-dropdown-item"><a href="/team">Elections</a></div>
-                </div>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">Admin</a>
-                <div class="mobile-menu-dropdown">
-                    <div class="mobile-dropdown-item"><a href="/admin">Council Resources</a></div>
-                    <div class="mobile-dropdown-item"><a href="/admin">Exec Updates</a></div>
-                    <div class="mobile-dropdown-item"><a href="/admin">Finances</a></div>
-                    <div class="mobile-dropdown-item"><a href="/admin">Governing Docs</a></div>
-                    <div class="mobile-dropdown-item"><a href="/admin">SRA</a></div>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">Eng Merch</a>
-                <div class="mobile-menu-dropdown">
-                    <div class="mobile-dropdown-item"><a href="/shop">+/- Store</a></div>
-                    <div class="mobile-dropdown-item"><a href="/jacket">Boilersuits</a></div>
-                    <div class="mobile-dropdown-item"><a href="/jacket">Eng Jackets</a></div>
-                </div>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">Co-op</a>
-                <div class="mobile-menu-dropdown">
-                    <div class="mobile-dropdown-item"><a href="/coop">Academic Resources</a></div>
-                </div>
-            </li>
-            <li class="mobile-menu-item">
-                <a class="mobile-menu-top-item">EDI</a>
-                <div class="mobile-menu-dropdown" id="campaign-dropdown-mobile">
-                    <div class="mobile-dropdown-item mobile-menu-bottom-item"><a href="/action">Action Plan</a>
+    <!-- MENU -->
+    <div class="menu-container">
+        <ol>
+            <a href="/"><img src="img/logo.png" class="menu-image"></a>
+            <div class="menu-items">
+                <li id="menu-about">
+                    <a href="/about" class="menu-top-item">Western</a>
+                    <div class="menu-dropdown" id="western-dropdown">
+                        <div class="dropdown-item"><a href="/about">About Us</a></div>
+                        <div class="dropdown-item"><a href="/about#culture">Culture</a></div>
+                        <div class="dropdown-item menu-bottom-item"><a href="/about#contact">Contact Us</a></div>
                     </div>
-                </div>
-            </li>
+                </li>
+                <li id="menu-join">
+                    <a href="/join" class="menu-top-item">Join Us</a>
+                    <div class="menu-dropdown" id="join-dropdown">
+                        <div class="dropdown-item"><a href="/clubs">Clubs</a></div>
+                        <div class="dropdown-item"><a href="">Conferences</a></div>
+                        <div class="dropdown-item"><a href="">Events</a></div>
+                        <div class="dropdown-item"><a href="">Wellness Committee</a></div>
+                        <div class="dropdown-item"><a href="">Sustainability Committee</a></div>
+                        <div class="dropdown-item"><a href="">Discord Committee</a></div>
+                        <div class="dropdown-item menu-bottom-item"><a href="">Blogs</a></div>
+                    </div>
+                </li>
+                <li id="menu-council">
+                    <a href="/team" class="menu-top-item">Council</a>
+                    <div class="menu-dropdown" id="council-dropdown">
+                        <div class="dropdown-item"><a href="/team">Operations</a></div>
+                        <div class="dropdown-item"><a href="/team">Our Team</a></div>
+                        <div class="dropdown-item menu-bottom-item"><a href="">Elections</a></div>
+                    </div>
+                </li>
+                <li id="menu-admin">
+                    <a href="/admin" class="menu-top-item">Admin</a>
+                    <div class="menu-dropdown" id="admin-dropdown">
+                        <div class="dropdown-item"><a href="/team">Council Resources</a></div>
+                        <div class="dropdown-item"><a href="/team">Exec Updates</a></div>
+                        <div class="dropdown-item"><a href="">Finances</a></div>
+                        <div class="dropdown-item"><a href="">Governing Docs</a></div>
+                        <div class="dropdown-item menu-bottom-item"><a href="">SRA</a></div>
+                </li>
+                <li id="menu-store">
+                    <a href="/store" class="menu-top-item">Eng Merch</a>
+                    <div class="menu-dropdown" id="store-dropdown">
+                        <div class="dropdown-item"><a href="/shop">+/- Store</a></div>
+                        <div class="dropdown-item"><a href="/jacket">Boilersuits</a></div>
+                        <div class="dropdown-item menu-bottom-item"><a href="/jacket">Eng Jackets</a></div>
+                    </div>
+                </li>
+                <li id="menu-coop">
+                    <a href="/coop" class="menu-top-item">Co-op</a>
+                    <div class="menu-dropdown" id="coop-dropdown">
+                        <div class="dropdown-item menu-bottom-item"><a href="">Academic Resources</a></div>
+                    </div>
+                </li>
+                <li id="menu-campaign">
+                    <a href="/campaign" class="menu-top-item">EDI</a>
+                    <div class="menu-dropdown" id="campaign-dropdown">
+                        <div class="dropdown-item menu-bottom-item"><a href="">Action Plan</a></div>
+                    </div>
+                </li>
+            </div>
+        </ol>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="menu-mobile-container">
+        <div id="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </ol>
-</div>
+        <ol>
+            <div class="mobile-menu-items" id="menu-mobile">
 
-    Engineering Jacket
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Western</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/about">About Us</a></div>
+                        <div class="mobile-dropdown-item"><a href="/about#culture">Culture</a></div>
+                        <div class="mobile-dropdown-item"><a href="/about#contact">Contact Us</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Join Us</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/clubs">Clubs</a></div>
+                        <div class="mobile-dropdown-item"><a href="/join">Conferences</a></div>
+                        <div class="mobile-dropdown-item"><a href="/events">Events</a></div>
+                        <div class="mobile-dropdown-item"><a href="/wellness">Wellness Committee</a></div>
+                        <div class="mobile-dropdown-item"><a href="/sustainability">Sustainability Committee</a></div>
+                        <div class="mobile-dropdown-item"><a href="/discord">Discord Committee</a></div>
+                        <div class="mobile-dropdown-item"><a href="/join#blog">Blogs</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Council</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/team">Operations</a></div>
+                        <div class="mobile-dropdown-item"><a href="/team">Our Team</a></div>
+                        <div class="mobile-dropdown-item"><a href="/team">Elections</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Admin</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/admin">Council Resources</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">Exec Updates</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">Finances</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">Governing Docs</a></div>
+                        <div class="mobile-dropdown-item"><a href="/admin">SRA</a></div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Eng Merch</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/shop">+/- Store</a></div>
+                        <div class="mobile-dropdown-item"><a href="/jacket">Boilersuits</a></div>
+                        <div class="mobile-dropdown-item"><a href="/jacket">Eng Jackets</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">Co-op</a>
+                    <div class="mobile-menu-dropdown">
+                        <div class="mobile-dropdown-item"><a href="/coop">Academic Resources</a></div>
+                    </div>
+                </li>
+                <li class="mobile-menu-item">
+                    <a class="mobile-menu-top-item">EDI</a>
+                    <div class="mobile-menu-dropdown" id="campaign-dropdown-mobile">
+                        <div class="mobile-dropdown-item mobile-menu-bottom-item"><a href="/action">Action Plan</a>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ol>
+    </div>
 
-    <br>
-    <img src="img/shop/jacket2.jpg" class="store-photo">
-    <br>
-    COVID-19 Update:
-    Jackets were available for pickup March 9-10, 2020. Due to the current situation, jacket pickup is temporarily
-    postponed until September. Any additional updates will be posted on Facebook @westernues
+        <!-- RANDOM BACKGROUND SHAPES -->
+        <img src="./img/Blob4.svg" class="background-blob1">
+        <img src="./img/Blob3.svg" class="background-blob2">
 
-    When:
-    Leather jackets are sold twice a year, once at the beginning of the Fall semester and once at the beginning of the
-    Winter semester. Keep an eye on the announcements during these times so you don’t miss the day!
+    <!-- ENG JACKET -->
+    <div class="jacket-container">
+        <div class="title jacket-title">Engineering Jacket</div>
 
-    Where:
-    Sales, Sizing, and Pickup all occur in the UES Lounge (SEB 1001)
+        <img src="img/shop/jacket2.jpg" class="store-photo1">
+        <strong>COVID-19 Update:</strong>
+        <br>
+        Jackets were available for pickup March 9-10, 2020. Due to the current situation, jacket pickup is temporarily
+        postponed until September. Any additional updates will be posted on Facebook @westernues
+        <br>
+        <strong>When:</strong>
+        <br>
+        Leather jackets are sold twice a year, once at the beginning of the Fall semester and once at the beginning of
+        the
+        Winter semester. Keep an eye on the announcements during these times so you don’t miss the day!
+        <br>
+        <strong>Where:</strong>
+        <br>
+        Sales, Sizing, and Pickup all occur in the UES Lounge (SEB 1001)
+        <br>
+        <strong>Cost:</strong>
+        <br>
+        Jackets will cost <strong>$435 including tax</strong> in the <strong>2019-2020 year</strong>, You can add 1-2 inside mickey
+        pockets for an additional $10 each. Purchases can be done through <strong>Cash, Cheque, or Credit.</strong>
+        <br>
+        <a href="/shop" class="cta-button"
+            style="position: absolute;height:auto;left:50%;transform: translate(-50%,0);margin-top:20px;">Coming
+            Soon</a>
 
-    Cost:
-    Jackets will cost $435 in the 2019-2020 year, You can add 1-2 inside mickey pockets for an additional $10 each
-    (Highly
-    recommended). Purchase can be done via Cash, Cheque, or Credit and the price includes tax
+    </div>
 
-    Boilersuit
-    <br>
-    <img src="img/shop/boilersuit.png" class="store-photo">
-    <br>
-    Boilersuits are grey coveralls. The tradition of coveralls in Engineering began in the 1960s in Sweden and Finland.
-    Their original purpose was to be worn when students visited companies but evolved into being used for partying and
-    to
-    identify their department. These coveralls were eventually adopted by schools in Canada.
+    <!-- BOILERSUIT -->
+    <div class="boilersuit-container">
+        <div class="title boilersuit-title">Boilersuit</div>
 
-    Boilersuits are a tradition at Western Engineering giving students an opportunity to show their Engineering spirit
-    and
-    pride. Students who are involved in the Eng community are awarded a Boilersuit and become a part of this fun
-    tradition.
+        <img src="img/shop/boilersuit.png" class="store-photo2">
+        Boilersuits are grey coveralls. The tradition of coveralls in Engineering began in the 1960s in Sweden and
+        Finland.
+        Their original purpose was to be worn when students visited companies but evolved into being used for partying
+        and
+        to identify their department. These coveralls were eventually adopted by schools in Canada.
+        <br>
+        <br>
+        Boilersuits are a tradition at Western Engineering giving students an opportunity to show their Engineering
+        spirit
+        and pride. Students who are involved in the Eng community are awarded a Boilersuit and become a part of this fun
+        tradition.
+        <br>
+        <br>
+        The goal of the suit is to be a visual representation of your time as an Engineering student by sewing on
+        patches
+        detailing your interests, events and clubs. They are also worn to conferences where patch trading with other
+        schools
+        allows you to meet new people and add to your suit. The Boilersuits also host events that give Boilersuits a fun
+        way
+        to socialize with like-minded students. Check back soon to this page for updated information on how you can
+        apply to
+        be a Boilersuit this year!
+        <br>
+        <a href="/shop" class="cta-button"
+            style="position: absolute;height:auto;left:50%;transform: translate(-50%,0);margin-top:20px;">Coming
+            Soon</a>
 
-    The goal of the suit is to be a visual representation of your time as an Engineering student by sewing on patches
-    detailing your interests, events and clubs. They are also worn to conferences where patch trading with other schools
-    allows you to meet new people and add to your suit. The Boilersuits also host events that give Boilersuits a fun way
-    to socialize with like-minded students. Check back soon to this page for updated information on how you can apply to
-    be a Boilersuit this year!
+    </div>
 
 </body>
-   <!-- FOOTER -->
-   <div class="footer">
+<!-- FOOTER -->
+<div class="footer">
     <a href="/" class="footer-image">
         <img src="./img/logo_white.png" height="30px">
         <span style="margin-left:10px;">Western UES</span>
