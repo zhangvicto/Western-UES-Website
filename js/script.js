@@ -202,6 +202,7 @@ menuButton.addEventListener("click", function () {
             mobileMenu.style.filter = 'alpha(opacity=' + op * 100 + ")";
             op += op * 0.1;
         }, 8);
+        //topMarginDown(mobileMenu);
         menuButton.classList.toggle("open");
         buttonState = 1;
 
