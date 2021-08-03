@@ -397,3 +397,24 @@ if (document.getElementsByClassName("jacket-gallery-photo")[0]) {
 
     }(document));
 }
+
+
+//TEAM
+let execCards = document.getElementsByClassName("exec-card");
+
+if (execCards) {
+    for (let i = 0; i < execCards.length; i++) {
+        let execDesc = execCards[i].querySelector(".exec-description");
+        let state = 0;
+        
+        execCards[i].addEventListener("click", function(){
+            if (state = 0) {
+                execDesc.style.display = "block";
+                state = 1;
+            } else {
+                execDesc.style.display = "none";
+                state = 0;
+            }
+        });
+    }
+}

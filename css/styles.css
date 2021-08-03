@@ -1214,11 +1214,71 @@ body ol li a {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/* TEAM */
+.team-container {
+    display: flex;
+    flex-flow: row wrap;
+    width:80vw;
+    margin:0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom:30px;
+}
 
+.exec-card  {
+    width:250px;
+    margin:10px;
+    padding:20px;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:transform 0.2s;
+    cursor: pointer;
+}
 
-/* SHOP */
+.exec-card:hover {
+    transition:transform 0.2s;
+    transform:scale(1.01);
+}
 
+.exec-photo {
+    width:250px;
+    height:250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom:10px;
+}
 
+.exec-name {
+    font-size:20px;
+    font-weight: 700;
+}
+
+.exec-position {
+    font-style: italic;
+}
+
+.exec-description {
+    font-weight:400px;
+    font-size: 14px;
+    display: none;
+}
+
+.council-container {
+
+}
+
+.council-photo {
+
+}
+
+.council-position {
+    
+}
+
+.council-name {
+
+}
 
 
 /* RESPONSIVE STUFF */
@@ -1227,25 +1287,22 @@ body ol li a {
         padding-left:10px;
         padding-right:10px;
     }
+
     .about-text {
-        height:50vh;
-        overflow-y:scroll;
-        
+        height: 50vh;
+        overflow-y: scroll;
     }
 
-    .about-text::-webkit-scrollbar
-    {
+    .about-text::-webkit-scrollbar {
       width: 5px;  /* for vertical scrollbars */
       height: 5px; /* for horizontal scrollbars */
     }
     
-    .about-text::-webkit-scrollbar-track
-    {
+    .about-text::-webkit-scrollbar-track {
       background: none;
     }
     
-    .about-text::-webkit-scrollbar-thumb
-    {
+    .about-text::-webkit-scrollbar-thumb {
       background: rgba(0, 0, 0, 0.5);
       border-radius:20px;
       height:30px;
