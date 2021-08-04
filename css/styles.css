@@ -921,10 +921,10 @@ body ol li a {
 
 .blog-container {
     display:flex;
+    width: 80vw;
 }
 
 .blog-title {
-
 }
 
 .blog-post {
@@ -1357,7 +1357,7 @@ body ol li a {
     transform: translate(-50%, -50%);
     height:100%;
     width:100%;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.4);
     cursor: pointer;
 }
 
@@ -1412,7 +1412,7 @@ body ol li a {
     z-index: 1000;
     cursor:pointer;
     border:none;
-    background-color: transparent;
+    border-radius: 50%;
 }
     
 .club-content-x:hover {
@@ -1460,9 +1460,11 @@ body ol li a {
 
 .club-content-socials {
     margin-top:20px;
+    text-align: center;
 }
 
 .club-content-socials-text {
+    width:100%;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -1515,6 +1517,43 @@ body ol li a {
       background: rgba(0, 0, 0, 0.5);
       border-radius:20px;
       height:30px;
+    }
+
+    .club-content {
+        height:80vh;
+        overflow-y: scroll;
+    }
+
+    .club-content::-webkit-scrollbar {
+        right:10px;
+        width: 1.5em;  /* Total width including `border-width` of scrollbar thumb */
+        height: 0;
+    }
+      
+    .club-content::-webkit-scrollbar-track {
+        background: none;
+    }
+      
+    .club-content::-webkit-scrollbar-thumb {
+        border-radius:20px;
+        border: 0.5em solid rgba(0, 0, 0, 0);  /* Transparent border together with `background-clip: padding-box` does the trick */
+        background-clip: padding-box;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .club-content-x {
+        position: absolute;
+        right: 0px;
+    }
+
+    .club-content-photo {
+        width:100%;
+        margin: 0 auto;
+        float:none;
+    }
+
+    .club-content-photo:hover {
+        transform:scale(1.02);
     }
 }
 
