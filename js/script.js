@@ -408,11 +408,30 @@ if (execCards) {
         let state = 0;
         
         execCards[i].addEventListener("click", function(){
-            if (state = 0) {
+            if (state == 0) {
                 execDesc.style.display = "block";
                 state = 1;
             } else {
                 execDesc.style.display = "none";
+                state = 0;
+            }
+        });
+    }
+}
+
+let councilCards = document.getElementsByClassName("council-card");
+
+if (councilCards) {
+    for (let i = 0; i < councilCards.length; i++) {
+        let councilDesc = councilCards[i].querySelector(".council-description");
+        let state = 0;
+        
+        councilCards[i].addEventListener("click", function(){
+            if (state == 0) {
+                councilDesc.style.display = "block";
+                state = 1;
+            } else {
+                councilDesc.style.display = "none";
                 state = 0;
             }
         });

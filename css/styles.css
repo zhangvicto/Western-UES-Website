@@ -1265,20 +1265,53 @@ body ol li a {
 }
 
 .council-container {
+    display: flex;
+    flex-flow: row wrap;
+    width:80vw;
+    margin:0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom:30px;
+}
 
+.council-card {
+    width:250px;
+    margin:10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:transform 0.2s;
+    cursor: pointer;
+}
+
+.council-card:hover {
+    transition:transform 0.2s;
+    transform:scale(1.01);
 }
 
 .council-photo {
-
-}
-
-.council-position {
-    
+    width:250px;
+    height:250px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom:10px;
 }
 
 .council-name {
-
+    font-size:20px;
+    font-weight: 700;
 }
+
+.council-position {
+    font-style: italic;
+}
+
+.council-description {
+    font-weight:400px;
+    font-size: 14px;
+    display: none;
+}
+
 
 
 /* RESPONSIVE STUFF */
