@@ -1341,7 +1341,7 @@ body ol li a {
 }
 
 .club-card {
-    width:200px;
+    width:250px;
     margin:10px;
     transition-duration: 250ms;
 }
@@ -1482,28 +1482,42 @@ body ol li a {
     margin-bottom: 5px;
 }
 
+.club-content-socials-icons {
+    height: 60px;
+    margin:0 auto;
+    position:relative;
+    padding:10px;
+}
+
 .club-content-socials-icon {
-    height:40px;
+    height:30px;
+    width:30px;
 }
 
 .club-content-socials-icon-wrapper {
-    height:40px;
     position: absolute;
     left:50%;
     top:50%;
     transform: translate(-50%,-50%);
-}
-
-.club-content-socials-icons {
-    border-radius:15px;
+    display: flex;
+    align-items: center;
+    height:30px;
+    overflow:hidden;
     background-color: var(--mainColor);
-    width:200px;
-    height:70px;
-    margin:0 auto;
-    position: relative;
+    padding:20px;
+    border-radius: 15px;
 }
 
-/* RESPONSIVE STUFF */
+.club-content-socials-icon-wrapper a {
+    height: 30px;
+    width: 30px;
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* RESPONSIVE STUFF *//* RESPONSIVE STUFF *//* RESPONSIVE STUFF *//* RESPONSIVE STUFF */
 @media screen and (max-width: 1200px) {
     body ol li {
         padding-left:10px;
@@ -1549,9 +1563,21 @@ body ol li a {
         margin: 0;
     }
 
+    .clubs-container {
+        width:90vw;
+    }
+    
     .club-content {
         height:80vh;
         overflow-y: scroll;
+    }
+
+    .club-content-text {
+        text-align: center;
+    }
+
+    .club-content-name {
+        font-size: 25px;
     }
 
     .club-content::-webkit-scrollbar {
