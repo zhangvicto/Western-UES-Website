@@ -814,17 +814,24 @@ body ol li a {
     width:80vw;
     margin: 0 auto;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    
+}
+
+.contact-us-title {
+    width: 100%;
 }
 
 .ues-map {
-    height: 500px;
     width: 30vw;
-    overflow: hidden;
-    display: inline;
+    display: inline-block;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .email-container {
-    margin-top: 20px;
     display: inline-block;
     width: 30vw;
     height: 350px;
@@ -868,6 +875,8 @@ body ol li a {
     border-radius: 20px;
     display: inline-block;
     margin-right: 1vw;
+    background-position: center;
+    background-size:cover;
 }
 
 .weekly-events {
@@ -907,6 +916,8 @@ body ol li a {
 
 .calendar-container {
     margin-top:40px;
+    margin: 0 auto;
+    width: 80vw;
 }
 
 /* GET INVOLVED */
@@ -1517,6 +1528,25 @@ body ol li a {
       background: rgba(0, 0, 0, 0.5);
       border-radius:20px;
       height:30px;
+    }
+
+    .contact-us {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .ues-map {
+        width: 80vw;
+        border-radius: 20px 20px 0px 0px;
+        margin: 0;
+        margin-top: 20px;
+    }
+    
+    .email-container {
+        font-size: 20px;
+        width: 80vw;
+        border-radius: 0px 0px 20px 20px;
+        margin: 0;
     }
 
     .club-content {
