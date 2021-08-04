@@ -406,8 +406,8 @@ if (execCards) {
     for (let i = 0; i < execCards.length; i++) {
         let execDesc = execCards[i].querySelector(".exec-description");
         let state = 0;
-        
-        execCards[i].addEventListener("click", function(){
+
+        execCards[i].addEventListener("click", function () {
             if (state == 0) {
                 execDesc.style.display = "block";
                 state = 1;
@@ -425,8 +425,8 @@ if (councilCards) {
     for (let i = 0; i < councilCards.length; i++) {
         let councilDesc = councilCards[i].querySelector(".council-description");
         let state = 0;
-        
-        councilCards[i].addEventListener("click", function(){
+
+        councilCards[i].addEventListener("click", function () {
             if (state == 0) {
                 councilDesc.style.display = "block";
                 state = 1;
@@ -437,3 +437,20 @@ if (councilCards) {
         });
     }
 }
+
+//CLUBS
+let clubContentBtn = document.getElementsByClassName("club-name-wrapper");
+let clubCard = document.getElementsByClassName("club-name-wrapper");
+let clubContentClose = document.getElementsByClassName("club-content-x");
+//let clubContent = document.getElementById("club-content");
+
+
+for (let i = 0; i < clubContentBtn.length; i++) {
+    clubContentBtn[i].addEventListener("click", function () {
+        fadeIn(clubContentBtn[i].parentElement.parentElement.querySelector(".club-content-wrapper"));
+    });
+    clubContentClose[i].addEventListener("click", function () {
+        fadeOut(clubContentBtn[i].parentElement.parentElement.querySelector(".club-content-wrapper"));
+    });
+}
+
