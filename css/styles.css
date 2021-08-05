@@ -1274,7 +1274,7 @@ body ol li a {
 .team-container {
     display: flex;
     flex-flow: row wrap;
-    width:80vw;
+    width:60vw;
     margin:0 auto;
     justify-content: center;
     align-items: flex-start;
@@ -1298,8 +1298,8 @@ body ol li a {
 }
 
 .exec-photo {
-    width:200px;
-    height:200px;
+    width:15rem;
+    height:15rem;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
