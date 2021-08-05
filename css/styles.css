@@ -1290,6 +1290,7 @@ body ol li a {
     transition:transform 0.2s;
     cursor: pointer;
     text-align: left;
+    background-color: var(--bodyColor);
 }
 
 .exec-card:hover {
@@ -1578,6 +1579,44 @@ body ol li a {
 
 .wellness-social-logo {
     height:30px;
+}
+
+.construction-container {
+    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+.construction-sign {
+    background-color: #f9bf1e;
+    border-radius: 20px;
+    width:500px;
+    padding:20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.construction-text {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.construction-container hr {
+    border:none;
+    border-top:20px dashed rgba(0, 0, 0, 0.9);
+    color:#fff;
+    height:1px;
+}
+
+.special-footer {
+    position: fixed;
+    bottom: 0;
 }
 
 /* RESPONSIVE STUFF *//* RESPONSIVE STUFF *//* RESPONSIVE STUFF *//* RESPONSIVE STUFF */
