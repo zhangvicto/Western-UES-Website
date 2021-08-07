@@ -12,7 +12,7 @@ body {
 
 /* VARS */
 :root {
-    --bodyColor: #fffff2;
+    --bodyColor: #FFFAFA;
     --mainColor: #4F2683;
     --menuFontColor: rgb(90, 84, 84);
     --accentColorDark: rgba(153, 120, 173, 0.25);
@@ -977,14 +977,13 @@ body ol li a {
 .blog-container {
     display:flex;
     width: 80vw;
+    margin: 0 auto;
 }
 
 .blog-title {
 }
 
 .blog-post {
-    width:80vw;
-    margin: 0 auto;
     
 }
 
