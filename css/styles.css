@@ -1573,13 +1573,64 @@ body ol li a {
 /* WELLNESS FORCE */
 .wellness-container {
     width:80vw;
-    margin: 0 auto;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+
+.wellness-title {
+    font-size: 40px;
+    display: inline-block;
+}
+
+.wellness-about {
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.wellness-resources {
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.2);
+    padding:20px;
+}
+
+.wellness-socials {
+    position:fixed;
+    top:50%;
+    transform: translate(0,-50%);
+    right:0px;
+    width: 150px;
+    color:white;
+}
+
+.wellness-social-card {
+    background-color: var(--mainColor);
+    border-radius: 20px 0px 0px 20px;
+    padding: 10px;
+    display:flex;
+    margin-top: 10px;
+    font-size: 10px;
+    align-items: center;
+    transform: translateX(95px);
 }
 
 .wellness-social-logo {
     height:30px;
+    width:30px;
+    display: inline-block;
+    padding:5px;
 }
 
+.wellness-social-text {
+    margin-left: 5px;
+    text-decoration: none;
+    color:white;
+}
+
+
+/* 404 PAGE */
 .construction-container {
     overflow: hidden;
     height: 100vh;
