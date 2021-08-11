@@ -1571,9 +1571,17 @@ body ol li a {
 
 /* WELLNESS FORCE */
 .wellness-container {
-    width:80vw;
+    width:60vw;
     margin:0 auto;
     margin-bottom: 30px;
+}
+
+.wellness-logo {
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    float: right;
+    margin-left: 10px;
 }
 
 .wellness-title {
