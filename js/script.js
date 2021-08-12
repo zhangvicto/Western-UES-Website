@@ -501,3 +501,23 @@ if (document.getElementsByClassName("wellness-social-card")) {
         })
     }
 }
+
+//SUSTAINABILITY
+if (document.getElementsByClassName("sustainability-photo")) {
+    let sustainPhoto = document.getElementsByClassName("sustainability-photo");
+    let sustainTip = document.getElementsByClassName("sustainability-tip");
+
+    for (let i = 0; i < sustainTip.length; i++) {
+        let state = 0;
+
+        sustainPhoto[i].addEventListener("click", function () {
+            if (state == 0) {
+                sustainTip[i].style.display = "block";
+                state = 1;
+            } else {
+                sustainTip[i].style.display = "none";
+                state = 0;
+            }
+        });
+    }
+}
