@@ -484,6 +484,7 @@ body ol li a {
     -webkit-box-shadow: 0px 0px 3px 0px var(--footerColor); 
     box-shadow: 0px 0px 3px 0px var(--footerColor);
     transition-duration: 200ms;
+    z-index: 10;
 }
 
 .cta-button:hover {
@@ -1735,6 +1736,24 @@ body ol li a {
 .special-footer {
     position: fixed;
     bottom: 0;
+}
+
+/* SPACES */
+.spaces-container {
+    margin: 0 auto;
+    width:60vw;
+    padding:20px;
+    padding-bottom: 80px;
+    text-align: left;
+}
+
+.discord-container {
+    margin: 0 auto;
+    width:60vw;
+    padding:20px;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+    text-align: right;
 }
 
 /* RESPONSIVE STUFF *//* RESPONSIVE STUFF *//* RESPONSIVE STUFF *//* RESPONSIVE STUFF */
