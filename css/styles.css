@@ -487,6 +487,10 @@ body ol li a {
     z-index: 10;
 }
 
+.store-button {
+    z-index: 10;
+}
+
 .cta-button:hover {
     transition-duration: 500ms;
     -webkit-box-shadow: none; 
