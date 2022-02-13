@@ -414,13 +414,13 @@ body ol li a {
 }
 
 .slide2 {
-    background-image: url("../img/front2.jpg");
+    background-image: url("../img/front3.jpg");
     opacity: 1;
     z-index: 0;
 }
 
 .slide3 {
-    background-image: url("../img/front3.jpg");
+    background-image: url("../img/front2.jpg");
     opacity: 1;
     z-index: -1;
 }
@@ -574,9 +574,10 @@ body ol li a {
 }
 
 .up-event-box-container {
+    text-align: left;
     margin-top: 10px;
     margin-left: 1vw;
-    width: 59vw;
+    width: 58vw;
     float: right;
     height:20vw;
     overflow-y: scroll;
@@ -760,6 +761,7 @@ body ol li a {
     text-align: center;
     width:80vw;
     margin: 0 auto;
+    margin-top: 40px;
 }
 
 .pie-container {
