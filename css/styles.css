@@ -1705,6 +1705,50 @@ body ol li a {
 }
 
 
+/* ADMIN PAGE */
+
+.admin-container {
+    width:80vw;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction:column;
+}
+
+.admin-card {
+    margin: 20px 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition-duration: 200ms;
+    cursor: pointer;
+    transition-duration: 250ms;
+    height:200px;
+    width:100%;
+    background-color: var(--mainColor);
+}
+
+.admin-card:hover {
+    transform: scale(1.1);
+    transition-duration: 250ms;
+}
+
+.admin-title {
+    position:absolute;
+    text-align: center;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.admin-content {
+    display: none;
+}
+
 /* 404 PAGE */
 .construction-container {
     overflow: hidden;

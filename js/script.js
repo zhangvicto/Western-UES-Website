@@ -521,3 +521,23 @@ if (document.getElementsByClassName("sustainability-photo")) {
         });
     }
 }
+
+//ADMIN 
+if (document.getElementsByClassName("admin-card")) {
+    let sustainPhoto = document.getElementsByClassName("admin-card");
+    let sustainTip = document.getElementsByClassName("admin-content");
+
+    for (let i = 0; i < sustainTip.length; i++) {
+        let state = 0;
+
+        sustainPhoto[i].addEventListener("click", function () {
+            if (state == 0) {
+                sustainTip[i].style.display = "block";
+                state = 1;
+            } else {
+                sustainTip[i].style.display = "none";
+                state = 0;
+            }
+        });
+    }
+}
